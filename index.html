@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금강제화</title>
+    <link rel="apple-touch-icon" href="images/common/favicon_iphone.png"><!-- 114x114 -->
+    <link rel="shortcut icon" href="images/common/favicon_android.png"><!-- 72x72 -->
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/common.css"><!-- 태그초기화, 공통클래스 -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- header, footer layout -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#fullpage" class="font_white bg_red">본문 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <!-- pc 헤더 -->
+        <header class="header on" id="pcHeader">
+            <h1 class="logo">
+                <a href="">
+                    <div class="blind-b">금강제화</div>
+                </a>
+            </h1>
+            <div class="util p_a">
+                <div class="lang p_r">
+                    <span class="blind-b">언어선택</span>
+                    <ul>
+                        <li><a href="" aria-current="page" class="lang_active">KR</a></li>
+                        <li><a href="">EN</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <button class="btn_open active" type="button">
+                        <span class="blind-b">전체메뉴 열기</span>
+                        <span class="line top"></span>
+                        <span class="line btm"></span>
+                    </button>
+                </div>
+                <div class="menu_bg"></div><!-- 흰배경 -->
+            </div>
+            <nav id="pcGnb">
+                <ul>
+                    <li><a href="">브랜드</a></li>
+                    <li><a href="">금강제화</a></li>
+                    <li><a href="">금강상품권</a></li>
+                    <li><a href="">스타일</a></li>
+                    <li><a href="">새소식</a></li>
+                    <li><a href="">서비스센터</a></li>
+                </ul>
+            </nav>
+            <nav id="menuWrap">
+                <ul>
+                    <li>
+                        <p>브랜드</p>
+                        <ul>
+                            <li><a href="" class="first">HERITAGE</a></li>
+                            <li><a href="">REGAL</a></li>
+                            <li><a href="">LANDROVER</a></li>
+                            <li><a href="">CLARKS</a></li>
+                            <li><a href="">BIOSOF</a></li>
+                            <li><a href="">RENOIR</a></li>
+                            <li><a href="">ESPRENDOR</a></li>
+                            <li><a href="">RICHARD</a></li>
+                            <li><a href="">FREEWAY</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">WAKY&apos;N TAKY</a></li>
+                            <li><a href="">K STUDIO</a></li>
+                            <li><a href="">RENOMA</a></li>
+                            <li><a href="">FAIR LADY</a></li>
+                            <li><a href="">BRUNOMAGLI</a></li>
+                            <li><a href="">DIAMOND</a></li>
+                            <li><a href="">LAND MASTER</a></li>
+                            <li><a href="">BUFFALO</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>금강제화</p>
+                        <ul>
+                            <li><a href="">경영이념</a></li>
+                            <li><a href="">회사연혁</a></li>
+                            <li><a href="">사업영역</a></li>
+                            <li><a href="">회사위치</a></li>
+                            <li><a href="">채용정보</a></li>
+                            <li><a href="">파트너스위크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>스타일</p>
+                        <ul>
+                            <li><a href="">카탈로그</a></li>
+                            <li><a href="">트랜드 리포트</a></li>
+                            <li><a href="">스타갤러리</a></li>
+                            <li><a href="">구두관리 TIP</a></li>
+                            <li><a href="">기능정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>새소식</p>
+                        <ul>
+                            <li><a href="">뉴스</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">매거진</a></li>
+                            <li><a href="">TV CF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>마이페이지</p>
+                        <ul>
+                            <li><a href="">회원정보수정</a></li>
+                            <li><a href="">회원탈퇴</a></li>
+                            <li><a href="">고객제안 답변</a></li>
+                            <li><a href="">이벤트 참여내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">금강상품권</a>
+                    </li>
+                    <li>
+                        <p>서비스센터</p>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">고객의 소리</a></li>
+                            <li><a href="">매장안내</a></li>
+                            <li><a href="">개인정보취급방침</a></li>
+                            <li><a href="">청소년보호정책</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>로그인/가입</p>
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                            <li><a href="">아이디/비밀번호 찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="last">금강몰 바로가기</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 태블릿/모바일 헤더 -->
+        <header class="header" id="mHeader">
+            <h1 class="logo">
+                <a href="">
+                    <div class="blind-b">금강제화</div>
+                </a>
+            </h1>
+            <div class="util p_a">
+                <div class="mgnb">
+                    <!-- gnb 전체열기 버튼 -->
+                    <div class="menu">
+                        <button class="btn_open" type="button">
+                            <span class="blind-b">전체메뉴 열기</span>
+                            <span class="line top"></span>
+                            <span class="line btm"></span>
+                        </button>
+                    </div>
+                    <!-- gnb 목록 -->
+                    <div class="mgnb_wrap">
+                        <div class="on_top"></div><!-- 흰배경 -->
+                        <nav id="mGnb">
+                            <ul>
+                                <li class="gnb1">
+                                    <a href="" class="first">브랜드</a>
+                                    <ul>
+                                        <li><a href="">HERITAGE</a></li>
+                                        <li><a href="">REGAL</a></li>
+                                        <li><a href="">LANDROVER</a></li>
+                                        <li><a href="">CLARKS</a></li>
+                                        <li><a href="">BIOSOF</a></li>
+                                        <li><a href="">RENOIR</a></li>
+                                        <li><a href="">ESPRENDOR</a></li>
+                                        <li><a href="">RICHARD</a></li>
+                                        <li><a href="">FREEWAY</a></li>
+                                        <li><a href="">WAKY&apos;N TAKY</a></li>
+                                        <li><a href="">K STUDIO</a></li>
+                                        <li><a href="">RENOMA</a></li>
+                                        <li><a href="">FAIR LADY</a></li>
+                                        <li><a href="">BRUNOMAGLI</a></li>
+                                        <li><a href="">DIAMOND</a></li>
+                                        <li><a href="">LAND MASTER</a></li>
+                                        <li><a href="">BUFFALO</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb2">
+                                    <a href="">금강제화</a>
+                                    <ul>
+                                        <li><a href="">경영이념</a></li>
+                                        <li><a href="">회사연혁</a></li>
+                                        <li><a href="">사업영역</a></li>
+                                        <li><a href="">회사위치</a></li>
+                                        <li><a href="">채용정보</a></li>
+                                        <li><a href="">파트너스위크</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb3">
+                                    <a href="">스타일</a>
+                                    <ul>
+                                        <li><a href="">카탈로그</a></li>
+                                        <li><a href="">트랜드 리포트</a></li>
+                                        <li><a href="">스타갤러리</a></li>
+                                        <li><a href="">구두관리 TIP</a></li>
+                                        <li><a href="">기능정보</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb4">
+                                    <a href="">새소식</a>
+                                    <ul>
+                                        <li><a href="">뉴스</a></li>
+                                        <li><a href="">이벤트</a></li>
+                                        <li><a href="">매거진</a></li>
+                                        <li><a href="">TV CF</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb5">
+                                    <a href="">서비스센터</a>
+                                    <ul>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">고객의 소리</a></li>
+                                        <li><a href="">매장안내</a></li>
+                                        <li><a href="">개인정보취급방침</a></li>
+                                        <li><a href="">청소년보호정책</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb6">
+                                    <a href="">마이페이지</a>
+                                    <ul>
+                                        <li><a href="">회원정보수정</a></li>
+                                        <li><a href="">회원탈퇴</a></li>
+                                        <li><a href="">고객제안 답변</a></li>
+                                        <li><a href="">이벤트 참여내역</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb7">
+                                    <a href="">로그인/가입</a>
+                                    <ul>
+                                        <li><a href="">로그인</a></li>
+                                        <li><a href="">회원가입</a></li>
+                                        <li><a href="">아이디/비밀번호 찾기</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnb8">
+                                    <a href="">금강상품권</a>
+                                </li>
+                                <li class="gnb9">
+                                    <a href="" target="_blank" >금강몰 바로가기</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- gnb 하단 언어선택, sns -->
+                    <div class="mgnb_btm">
+                        <div class="clearfix">
+                            <div class="lang">
+                                <span class="blind-b">언어선택</span>
+                                <ul>
+                                    <li><a href="" aria-current="page" class="lang_active">KR</a></li>
+                                    <li><a href="">EN</a></li>
+                                </ul>
+                            </div>
+                            <div class="sns">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/kumkangmall/?hl=ko" target="_blank">
+                                            <span class="blind-b">인스타그램 새창열기</span>
+                                            <img src="images/common/sns_white_insta.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ko-kr.facebook.com/kumkang.official" target="_blank">
+                                            <span class="blind-b">페이스북 새창열기</span>
+                                            <img src="images/common/sns_white_facebook.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCdh6XE6_1U5sdvk4RPyWj-w" target="_blank" class="last">
+                                            <span class="blind-b">유튜브 새창열기</span>
+                                            <img src="images/common/sns_white_youtube.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_bg"></div><!-- 흰배경 -->
+                </div>
+            </div>
+        </header>
+
+        <div id="fullpage">
+            <section class="section" id="cnt1">
+                <h2 class="blind-b">금강제화 브랜드 소개</h2>
+                <div class="bg_black"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="swiper-img">
+                                <div class="swiper-txt">
+                                    <h3>HERITAGE</h3>
+                                    <p>오직 당신을 위한 맞춤 구두를 만나보세요</p>
+                                    <div class="nexttxt">
+                                        <span class="blind-b">다음 페이지</span><span>REGAL</span>
+                                    </div>
+                                    <a href="" class="btn_view bg_transline" role="button">VIEW MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="swiper-img">
+                                <div class="swiper-txt">
+                                    <h3>REGAL</h3>
+                                    <p>최고의 품질로 가치있는 품격을 선물합니다.</p>
+                                    <div class="nexttxt">
+                                        <span class="blind-b">다음 페이지</span><span>RENOIR</span>
+                                    </div>
+                                    <a href="" class="btn_view bg_transline" role="button">VIEW MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="swiper-img">
+                                <div class="swiper-txt">
+                                    <h3>RENOIR</h3>
+                                    <p>트랜드와 클래식이 공존하는 <br>모던 엘레강스 스타일</p>
+                                    <div class="nexttxt">
+                                        <span class="blind-b">다음 페이지</span><span>HERITAGE/span>
+                                    </div>
+                                    <a href="" class="btn_view bg_transline" role="button">VIEW MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 실행, 일시정지 버튼 추가 -->
+                    <button class="autoplay play_stop" title="재생">
+                        <span class="blind-b">재생</span>
+                    </button>
+                    <button class="autostop play_stop" title="일시정지">
+                        <span class="blind-b">일시정지</span>
+                    </button>
+                </div>
+            </section>
+            <section class="section" id="cnt2">
+                <p>HISTORY</p>
+                <h2 class="blind-b">금강제화 아카이브</h2>
+                <div class="bg_pattern">
+                    <span class="bg_line"></span>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide4">
+                            <div class="swiper-inner inner_l">
+                                <div class="swiper-txt">
+                                    <div class="dot"></div>
+                                    <div class="count_number">1954</div>
+                                    <div class="history_info">
+                                        <ul>
+                                            <li>1954.10 금강제화산업사 설립</li>
+                                            <li>1972.07 미국 뉴욕 지사 설립</li>
+                                            <li>1973.03 대양 설립(LANDROVER)</li>
+                                            <li>1974.11 안국화학(주)설립</li>
+                                            <li>1975.08  미국 현지 법인(F.I.F INC)설립</li>
+                                            <li>1976.09 (주)비제바노 설립(VIGEVANO)</li>
+                                            <li>1978.10  부평 제2 공장 신설, 가동</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-inner inner_r">
+                                <div class="img_back"></div>
+                                <div class="img_front"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <div class="swiper-inner inner_l">
+                                <div class="swiper-txt">
+                                    <div class="dot"></div>
+                                    <div class="count_number">1980</div>
+                                    <div class="history_info">
+                                        <ul>
+                                            <li>1980.09  호주 시드니 지사 설립</li>
+                                            <li>1984.01  공장품질관리 1등급 업체 지정</li>
+                                            <li>1985.12  일본 동경 지사 설립</li>
+                                            <li>1986.10  86서울아시안게임 공식후원사</li>
+                                            <li>1988.10  88서울 올림픽 공식 후원사</li>
+                                            <li>1989.07  광고회사 AD-K 설립</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-inner inner_r">
+                                <div class="img_back"></div>
+                                <div class="img_front"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide6">
+                            <div class="swiper-inner inner_l">
+                                <div class="swiper-txt">
+                                    <div class="dot"></div>
+                                    <div class="count_number">1990</div>
+                                    <div class="history_info">
+                                        <ul>
+                                            <li>1990.02  (주)대양 레스모아 사업부 신설</li>
+                                            <li>1991.03  93대전엑스포 공식 후원사 선정</li>
+                                            <li>1992.01  Buffalo 브랜드 출시</li>
+                                            <li>1993.08  93대전엑스포 금강제화관 설치, 운영</li>
+                                            <li>1995.07  (주)비제바노 합병</li>
+                                            <li>1996.02  (주)금화스포츠 설립</li>
+                                            <li>1998.10  IMF극복을 위한 실업기금 조성, 기탁</li>
+                                            <li>1999.02  결식 아동을 위한 성금 조성, 기탁</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-inner inner_r">
+                                <div class="img_back"></div>
+                                <div class="img_front"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide7">
+                            <div class="swiper-inner inner_l">
+                                <div class="swiper-txt">
+                                    <div class="dot"></div>
+                                    <div class="count_number">2000</div>
+                                    <div class="history_info">
+                                        <ul>
+                                            <li>2002.07  (주)금강으로 사명 변경</li>
+                                            <li>2004.07  금강로지스틱스 (주)합병</li>
+                                            <li>2009.01  (주)갈라인터내셔널 설립</li>
+                                            <li><span>
+                                                2009.02  APPLE Premium Reseller Store
+                                            </span><span>&apos;FRISBEE&apos; 명동점 오픈</span></li>
+                                            <li>2010.01  (주)브루노말리코리아 설립</li>
+                                            <li>2010.07  M.Brunomagli 브랜드 런칭</li>
+                                            <li>2010.08  HellyHansen 브랜드 런칭</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-inner inner_r">
+                                <div class="img_back"></div>
+                                <div class="img_front"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </section>
+            <section class="section" id="cnt3">
+                <div class="bg_begie"></div>
+                <p>MANUFACTURING <span>TECHNIQUE</span></p>
+                <h2 class="blind-b">금강제화 기술력 소개</h2>
+                <strong>
+                    <span>금강제화만의 탁월한</span>
+                    <span>기술력은</span>
+                    <span>기술력은 안정된 품질과</span>
+                    <span>신뢰를 제공합니다</span>
+                </strong>
+                <div id="bgSlider">
+                    <div class="visual_wrap">
+                        <ul class="visual" aria-live="polite">
+                            <li class="slide_idx1">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx2">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx3">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx4">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx5">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx6">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                            <li class="slide_idx7">
+                                <div class="img_bg"></div>
+                                <div class="img_box"></div>
+                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="controller">
+                        <button id="prev" type="button">
+                            <span class="blind-b">이전</span>
+                        </button>
+                        <button id="next" type="button">
+                            <span class="blind-b">다음</span>
+                        </button>
+
+                        <!-- 실행, 일시정지 버튼 추가 -->
+                        <button class="autoplay play_stop" title="재생">
+                            <span class="blind-b">재생</span>
+                        </button>
+                        <button class="autostop play_stop" title="일시정지">
+                            <span class="blind-b">일시정지</span>
+                        </button>
+
+                        <div class="pagination">
+                            <ul>
+                                <li>
+                                    <a href="" class="index" data-index="1" role="button">굿이어 웰트 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="2" role="button">하이드로 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="3" role="button">시스 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="4">모카신 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="5" role="button">캘리포니아 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="6" role="button">볼로냐 제법</a>
+                                </li>
+                                <li>
+                                    <a href="" class="index" data-index="7" role="button">프리웨이 제법</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="cnt4">
+                <div class="inner_news">
+                    <p>NEWS</p>
+                    <h2>금강제화 새소식</h2>
+                    <div class="news_tit">
+                        <ul>
+                            <li>
+                                <span>2020.05.28</span>
+                                <a href="">금강제화, 30년 장인의 `비스포크 <span>서비스`남성 위한 명품 수제화</span></a>
+                                <div class="news_arrow">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>2020.02.28</span>
+                                <a href="">금강제화, 코로나19 피해복구에 <span>1억원 성금기부 </span></a>
+                                <div class="news_arrow">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>2020.01.16</span>
+                                <a href="">금강제화, 공장,물류센터 세종시 <span>통합이전</span></a>
+                                <div class="news_arrow">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="viewmore"><span class="blind-b">금강제화 새소식 </span>더보기</a>
+                </div>
+                <div class="inner_event">
+                    <p>EVENT</p>
+                    <h2>금강제화 이벤트</h2>
+                    <div class="event_banner">
+                        <ul>
+                            <li class="banner1">
+                                <a href="" class="banner_img">
+                                    <strong>금강과 함께하는 <br>크리스마스</strong>
+                                </a>
+                                <p>금강몰에서 만나는 미리크리스마스</p>
+                                <span>2020.12.01 ~ 2020.12.30</span>
+                            </li>
+                            <li class="banner2">
+                                <a href="" class="banner_img">
+                                    <strong>금강 주말특가 <br>최대 30% 세일</strong>
+                                </a>
+                                <p>금주의 버라이어티 혜택</p>
+                                <span>2020.12.18 ~ 2020.12.24</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="" class="viewmore"><span class="blind-b">금강제화 이벤트 </span>더보기</a>
+            </section>
+            <section class="section" id="cnt5">
+                <h2 class="blind-b">금강제화 브랜드 가치</h2>
+                <div class="bg_img_move"></div>
+                <div class="txt">
+                    <p>금강제화의 <span>노하우는 다릅니다.</span></p>
+                    <p>67년 노하우로 완성된 <span>NO.1 기술력으로</span></p>
+                    <p>브랜드의 가치를 <span>느낄 수 있습니다.</span></p>
+                </div>
+                <a href="https://www.kumkangshoe.com/" class="btn_view bg_transline" target="_blank">금강몰 바로가기</a>
+            </section>
+            <div class="section fp-auto-height">
+                <!-- .fp-auto-height 브라우저 한칸 높이가 아닌 경우 제어 -->
+                <footer id="footer">
+                    <div class="max1280">
+                        <div class="foot_left">
+                            <div class="foot_link">
+                                <ul>
+                                    <li><a href="">개인정보취급방침</a></li>
+                                    <li><a href="">이용약관</a></li>
+                                    <li><a href="">청소년보호정책</a></li>
+                                    <li><a href="">고객센터</a></li>
+                                    <li><a href="">매장안내</a></li>
+                                    <li><a href="">온라인쇼핑몰</a></li>
+                                </ul>
+                            </div>
+                            <div class="foot_info">
+                                <p>
+                                    <span>(주)금강</span>
+                                    <span>사업자번호 122-81-04585</span>
+                                </p>
+                                <p>
+                                    <span>대표 주병혁</span>
+                                    <span>고객문의 1577-4884</span>
+                                </p>
+                            </div>
+                            <address>
+                                <span>서울시 강남구 강남대로500 논현동 156-1번지</span>
+                                <span>우편번호 06119</span>
+                            </address>
+                            <p class="copyright">
+                                <span>COPYRIGHT &copy; 2020 KUMKANG.COM</span>
+                                <span>ALL RIGHT RESERVED.</span>
+                            </p>
+                        </div>
+                        <div class="foot_right">
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/kumkangmall/?hl=ko" target="_blank">
+                                        <span class="blind-b">인스타그램 새창열기</span>
+                                        <img src="images/common/sns_grey_insta.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ko-kr.facebook.com/kumkang.official" target="_blank">
+                                        <span class="blind-b">페이스북 새창열기</span>
+                                        <img src="images/common/sns_grey_facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCdh6XE6_1U5sdvk4RPyWj-w" target="_blank" class="last">
+                                        <span class="blind-b">유튜브 새창열기</span>
+                                        <img src="images/common/sns_grey_youtube.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

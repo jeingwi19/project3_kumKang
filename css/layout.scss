@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@import "_var", "_mixin", "_function";
+
+//pc -> tablet -> mobile
+
+#wrap{width: 1280px;min-width: 320px;}
+
+//#header
+.header{//pc, mobile 공통
+    position: fixed;top: 0;left: 0;width: 100%;z-index: 900;height: 100px;color: #fff;font-family: NtSansKR;
+    .logo{
+        float: left;padding: 26px;margin-left: 40px;
+        a{
+            @include bgsize(cover);
+            display: block;width: 160px;height: 48px;background: url("../images/common/logo_pc1x.svg")no-repeat;
+        }
+    }
+    .util{
+        top: 0;right: 0;
+        > *{float: left;}
+    }
+    .menu{
+        @include bgsize(cover);
+        width: 100px;height: 100px; 
+    }
+    .btn_open{
+        width: 24px;height: 24px;margin: 38px;
+        &, .line{position: absolute;}
+        .line{
+            @include translate-50;
+            @include transition(all 0.5s);
+            width: 24px;height: 4px;background: #222;top: 50%;
+        }
+        .top{top: 6px;left: 0;}
+        .btm{top: 18px;left: 0;}
+        &.active{
+            .line{background: #222 !important;}
+            .top{
+                @include transform(rotate(225deg));
+                top: 10px;
+            }
+            .btm{
+                @include transform(rotate(-225deg));
+                top: 10px;
+            }
+        }
+    }
+}
+.header.on{
+    background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
+}
+#pcHeader{
+    .util{
+        .lang{
+            width: 76px;height: 100px;padding: 38px 0;margin-right: 40px;
+            a{display: inline-block;color: #949494;font-weight: 700;line-height: 24px;float: left;}
+            .lang_active{color: #222;margin-right: 32px;}
+            .lang_active::after{content: "";position: absolute;width: 2px;height: 12px;top: 45px;right: 38px;background: #222;}
+        }
+        .menu{
+            button{
+                display: inline-block;
+            }
+        }
+    }
+}
+#pcGnb{
+    float: left;margin: 0 40px;min-width: 740px;width: 820px;
+    > ul > li{ //depth li
+        float: left;
+        a{//depth1 a
+            display: block;font-weight: 500;line-height: 100px;padding: 0 40px 0 40px;
+        }
+    }
+}
+#menuWrap{
+    /* display: none; */
+    position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;
+    
+    > ul{
+        /* position: relative; */width: 1060px;height: 680px;left: 0;top: 0;margin: 0 auto;background: pink;
+        > li > p{display: inline-block;padding: 48px 125px 8px 0;}
+        > li{width: 180px;height: 40px;}
+    }
+    & ul li a{display: block;}
+    
+    > ul > li > a, >ul > li > p{position: relative;height: 80px;font-size: 20px;font-weight: 700;}
+    /*  ul > li:hover> a, > ul > li > a:focus, >ul, li.on > a{border-bottom: 2px solid $red;} */
+    
+
+}
+
+#mHeader{display: none;}
+
+@media screen and (max-width: 1536px) { //768의 2배수 지원
+    //#header
+    //#footer
+}
+
+//tablet
+@media screen and (max-width: 1024px) { //768의 가로모드 1024지원
+    //#header
+    //#footer
+}
+
+@media screen and (max-width: 640px) { //320의 2배수 지원
+    //#header
+    //#footer
+}

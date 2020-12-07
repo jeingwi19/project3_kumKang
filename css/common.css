@@ -1,0 +1,143 @@
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NtSansKR/NotoSans-Regular.eot");
+  src: url("../fonts/NtSansKR/NotoSans-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/NtSansKR/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NtSansKR/NotoSans-Regular.woff") format("woff"), url("../fonts/NtSansKR/NotoSans-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/NtSansKR/NotoSans-Medium.eot");
+  src: url("../fonts/NtSansKR/NotoSans-Medium.eot#iefix") format("embedded-opentype"), url("../fonts/NtSansKR/NotoSans-Medium.woff2") format("woff2"), url("../fonts/NtSansKR/NotoSans-Medium.woff") format("woff"), url("../fonts/NtSansKR/NotoSans-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: NtSansKR;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/NtSansKR/NotoSans-Bold.eot");
+  src: url("../fonts/NtSansKR/NotoSans-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/NtSansKR/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NtSansKR/NotoSans-Bold.woff") format("woff"), url("../fonts/NtSansKR/NotoSans-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: SongMyung;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SongMyung/SongMyung-Regular.eot");
+  src: url("../fonts/SongMyung/SongMyung-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/SongMyung/SongMyung-Regular.woff2") format("woff2"), url("../fonts/SongMyung/SongMyung-Regular.woff") format("woff"), url("../fonts/SongMyung/SongMyung-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: RozhaOne;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/RozhaOne/RozhaOne-Regular.eot");
+  src: url("../fonts/RozhaOne/RozhaOne-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/RozhaOne/RozhaOne-Regular.woff2") format("woff2"), url("../fonts/RozhaOne/RozhaOne-Regular.woff") format("woff"), url("../fonts/RozhaOne/RozhaOne-Regular.otf") format("opentype"); }
+body, h1, h2, h3, h4, h5, h6, p, ul, button, form {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+img, video {
+  max-width: 100%; }
+
+address {
+  font-style: normal; }
+
+header, nav, section, footer {
+  display: block; }
+
+.f_l {
+  float: left; }
+
+.f_r {
+  float: right; }
+
+.p_r {
+  position: relative; }
+
+.p_a {
+  position: absolute; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.blind-b {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); }
+
+.max1280 {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto; }
+
+.btn_view {
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  width: 180px; }
+  .btn_view.bg_transline {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent; }
+  .btn_view.bg_white {
+    background: #fff; }
+
+body {
+  font-family: RozhaOne, NtSansKR, SongMyung;
+  font-size: 16px;
+  color: #222;
+  line-height: 1;
+  font-weight: 400;
+  word-break: keep-all; }
+  body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+#skip a {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 1000; }
+  #skip a:focus {
+    left: 0;
+    width: 100%;
+    background: #B82830;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #fff; }
+
+@media screen and (max-width: 1536px) {
+  .max1280 {
+    max-width: 100%; } }
+
+/*# sourceMappingURL=common.css.map */
