@@ -4,7 +4,7 @@
 
 //pc -> tablet -> mobile
 
-#wrap{width: 1280px;min-width: 320px;}
+#wrap{width: 1280px;min-width: 320px;margin: 0 auto;}
 
 //#header
 .header{//pc, mobile 공통
@@ -66,7 +66,7 @@
     }
 }
 #pcGnb{
-    float: left;margin: 0 40px;min-width: 740px;width: 820px;
+    /* float: left; */margin: 0 auto;min-width: 740px;width: 820px;
     > ul > li{ //depth li
         float: left;
         a{//depth1 a
@@ -75,20 +75,23 @@
     }
 }
 #menuWrap{
-    /* display: none; */
-    position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;
+    display: none;
+    position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;
     
     > ul{
-        /* position: relative; */width: 1060px;height: 680px;left: 0;top: 0;margin: 0 auto;background: pink;
-        > li > p{display: inline-block;padding: 48px 125px 8px 0;}
-        > li{width: 180px;height: 40px;}
+        position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;background: pink;
+        > li{float: left;margin-right: 40px;
+            > ul > li{height: 40px;background: skyblue;}
+            > p{padding: 48px 0 8px 0;}
+        }
+        & li a{display: block;width: 100%;height: 100%;padding: 12px 0;color: #595959;}
     }
-    & ul li a{display: block;}
     
-    > ul > li > a, >ul > li > p{position: relative;height: 80px;font-size: 20px;font-weight: 700;}
-    /*  ul > li:hover> a, > ul > li > a:focus, >ul, li.on > a{border-bottom: 2px solid $red;} */
-    
+    > ul > li > a, >ul > li > p{/* position: relative; */height: 80px;font-size: 20px;font-weight: 700;background: greenyellow;display: block;width: 180px;}
+    > ul > li > a{padding: 48px 0 8px 0;color: #222;}
 
+    .m-40px{margin-right: -40px;}
+    .heigh_full{height: 680px;}
 }
 
 #mHeader{display: none;}

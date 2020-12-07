@@ -1,6 +1,7 @@
 #wrap {
   width: 1280px;
-  min-width: 320px; }
+  min-width: 320px;
+  margin: 0 auto; }
 
 .header {
   position: fixed;
@@ -108,8 +109,8 @@
   display: inline-block; }
 
 #pcGnb {
-  float: left;
-  margin: 0 40px;
+  /* float: left; */
+  margin: 0 auto;
   min-width: 740px;
   width: 820px; }
   #pcGnb > ul > li {
@@ -121,35 +122,50 @@
       padding: 0 40px 0 40px; }
 
 #menuWrap {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 100px;
   left: 0;
   right: 0;
   background: rgba(245, 245, 245, 0.98);
   border-bottom: 1px solid #dbdbdb;
-  /*  ul > li:hover> a, > ul > li > a:focus, >ul, li.on > a{border-bottom: 2px solid $red;} */ }
+  height: 680px; }
   #menuWrap > ul {
-    /* position: relative; */
+    position: relative;
     width: 1060px;
-    height: 680px;
     left: 0;
     top: 0;
     margin: 0 auto;
     background: pink; }
-    #menuWrap > ul > li > p {
-      display: inline-block;
-      padding: 48px 125px 8px 0; }
     #menuWrap > ul > li {
-      width: 180px;
-      height: 40px; }
-  #menuWrap ul li a {
-    display: block; }
+      float: left;
+      margin-right: 40px; }
+      #menuWrap > ul > li > ul > li {
+        height: 40px;
+        background: skyblue; }
+      #menuWrap > ul > li > p {
+        padding: 48px 0 8px 0; }
+    #menuWrap > ul li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 12px 0;
+      color: #595959; }
   #menuWrap > ul > li > a, #menuWrap > ul > li > p {
-    position: relative;
+    /* position: relative; */
     height: 80px;
     font-size: 20px;
-    font-weight: 700; }
+    font-weight: 700;
+    background: greenyellow;
+    display: block;
+    width: 180px; }
+  #menuWrap > ul > li > a {
+    padding: 48px 0 8px 0;
+    color: #222; }
+  #menuWrap .m-40px {
+    margin-right: -40px; }
+  #menuWrap .heigh_full {
+    height: 680px; }
 
 #mHeader {
   display: none; }
