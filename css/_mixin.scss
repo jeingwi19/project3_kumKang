@@ -42,22 +42,28 @@
     border-radius: $value;
 }
 
-@mixin transition($value...){
+@mixin transition($value...) {
     -webkit-transition: $value;
     -moz-transition: $value;
     -o-transition: $value;
     transition: $value;
 }
 
-@mixin keyframes($value...){
-    -webkit-keyframes: $value;
-    -moz-keyframes: $value;
-    -o-keyframes: $value;
-    keyframes: $value;
-}
-
 @mixin translate3d{
     -webkit-transform: translate3d(-20%, 0, 0);
     -moz-transform: translate3d(-20%, 0, 0);
     transform: translate3d(-20%, 0, 0);
+}
+
+@mixin keyframes($animation_name) {
+    @keyframes #{$animation_name} {
+        @content;
+    }
+}
+
+
+@mixin animation ($delay, $duration, $name) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $name
 }
