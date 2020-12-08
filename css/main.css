@@ -1,0 +1,125 @@
+#cnt1 {
+  position: relative; }
+  #cnt1 .swiper-container {
+    width: 100%;
+    height: 100vh;
+    background: #222; }
+    #cnt1 .swiper-container .swiper-slide {
+      -webkit-background-size: contain !important;
+      -moz-background-size: contain !important;
+      background-size: contain !important;
+      background: no-repeat 70% 60%;
+      color: #fff; }
+      #cnt1 .swiper-container .swiper-slide.slide1 {
+        background-image: url("../images/main/cnt1_pc_img01.png"); }
+      #cnt1 .swiper-container .swiper-slide.slide2 {
+        background-image: url("../images/main/cnt1_pc_img02.png"); }
+      #cnt1 .swiper-container .swiper-slide.slide3 {
+        background-image: url("../images/main/cnt1_pc_img03.png"); }
+      #cnt1 .swiper-container .swiper-slide .swiper-txt {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        /* h3, p, span, a{@include translate3d;} */ }
+        #cnt1 .swiper-container .swiper-slide .swiper-txt h3 {
+          -webkit-transition: all 0.8s cubic-bezier(0.25, 0.61, 0.355, 1) 1.1s;
+          -moz-transition: all 0.8s cubic-bezier(0.25, 0.61, 0.355, 1) 1.1s;
+          -o-transition: all 0.8s cubic-bezier(0.25, 0.61, 0.355, 1) 1.1s;
+          transition: all 0.8s cubic-bezier(0.25, 0.61, 0.355, 1) 1.1s;
+          font-family: RozhaOne;
+          font-weight: 400;
+          font-size: 5rem;
+          align-self: flex-start;
+          margin: 0 0 auto 0;
+          line-height: 1;
+          /* opacity: 0; */ }
+        #cnt1 .swiper-container .swiper-slide .swiper-txt h3::before {
+          content: "";
+          position: absolute;
+          top: -1rem;
+          left: 0;
+          width: 140%;
+          height: 1px;
+          background: #fff; }
+        #cnt1 .swiper-container .swiper-slide .swiper-txt span {
+          -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+          -moz-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+          -o-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+          transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+          font-size: 2rem;
+          position: absolute;
+          top: -4rem;
+          display: block;
+          color: #e5e5e5; }
+        #cnt1 .swiper-container .swiper-slide .swiper-txt p {
+          -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s;
+          -moz-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s;
+          -o-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s;
+          transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s;
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: 2rem; }
+        #cnt1 .swiper-container .swiper-slide .swiper-txt a {
+          -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+          -moz-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+          -o-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+          transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 2s;
+          margin-top: 4rem;
+          font-family: NtSansKR;
+          font-weight: 400;
+          font-size: 1.25rem; }
+    #cnt1 .swiper-container .btn_controller {
+      width: 156px;
+      height: 52px;
+      position: absolute;
+      left: 20%;
+      top: 80%; }
+      #cnt1 .swiper-container .btn_controller .swiper-button-prev, #cnt1 .swiper-container .btn_controller .swiper-button-next {
+        position: static;
+        background: no-repeat center;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        top: 22px; }
+      #cnt1 .swiper-container .btn_controller .swiper-button-prev::after, #cnt1 .swiper-container .btn_controller .swiper-button-next::after {
+        display: none; }
+      #cnt1 .swiper-container .btn_controller .swiper-button-prev.swiper-button-disabled, #cnt1 .swiper-container .btn_controller .swiper-button-next.swiper-button-disabled {
+        opacity: 1; }
+      #cnt1 .swiper-container .btn_controller .swiper-button-prev {
+        background-image: url("../images/common/icon_pc1x_arrow_white_down.svg");
+        left: 0; }
+      #cnt1 .swiper-container .btn_controller .swiper-button-next {
+        background-image: url("../images/common/icon_pc1x_arrow_white_up.svg");
+        right: 0; }
+      #cnt1 .swiper-container .btn_controller > button {
+        position: absolute;
+        z-index: 1; }
+      #cnt1 .swiper-container .btn_controller .play_stop {
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        left: 52px;
+        background: no-repeat center; }
+      #cnt1 .swiper-container .btn_controller .autoplay {
+        background-image: url("../images/common/icon_pc1x_play_white.svg");
+        display: none; }
+      #cnt1 .swiper-container .btn_controller .autostop {
+        background-image: url("../images/common/icon_pc1x_pause_white.svg"); }
+
+#cnt2 {
+  position: relative; }
+  #cnt2 .bg_line {
+    height: 4px;
+    width: 100%;
+    background: #222;
+    position: absolute;
+    top: 50%;
+    z-index: 2; }
+  #cnt2 .swiper-container {
+    width: 100%;
+    height: 100vh;
+    background: pink; }
+
+/*# sourceMappingURL=main.css.map */

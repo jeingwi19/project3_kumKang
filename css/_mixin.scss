@@ -48,3 +48,16 @@
     -o-transition: $value;
     transition: $value;
 }
+
+@mixin keyframes($value...){
+    -webkit-keyframes: $value;
+    -moz-keyframes: $value;
+    -o-keyframes: $value;
+    keyframes: $value;
+}
+
+@mixin translate3d{
+    -webkit-transform: translate3d(-20%, 0, 0);
+    -moz-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+}

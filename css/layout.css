@@ -1,7 +1,8 @@
 #wrap {
-  width: 1280px;
+  /* width: 1280px; */
   min-width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .header {
   position: fixed;
@@ -83,33 +84,34 @@
   color: #222;
   border-bottom: 1px solid #dbdbdb; }
 
-#pcHeader .util .lang {
-  width: 76px;
-  height: 100px;
-  padding: 38px 0;
-  margin-right: 40px; }
-  #pcHeader .util .lang a {
-    display: inline-block;
-    color: #949494;
-    font-weight: 700;
-    line-height: 24px;
-    float: left; }
-  #pcHeader .util .lang .lang_active {
-    color: #222;
-    margin-right: 32px; }
-  #pcHeader .util .lang .lang_active::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 12px;
-    top: 45px;
-    right: 38px;
-    background: #222; }
-#pcHeader .util .menu button {
-  display: inline-block; }
+#pcHeader {
+  /* display: none; */ }
+  #pcHeader .util .lang {
+    width: 76px;
+    height: 100px;
+    padding: 38px 0;
+    margin-right: 40px; }
+    #pcHeader .util .lang a {
+      display: inline-block;
+      color: #949494;
+      font-weight: 700;
+      line-height: 24px;
+      float: left; }
+    #pcHeader .util .lang .lang_active {
+      color: #222;
+      margin-right: 32px; }
+    #pcHeader .util .lang .lang_active::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 12px;
+      top: 45px;
+      right: 38px;
+      background: #222; }
+  #pcHeader .util .menu button {
+    display: inline-block; }
 
 #pcGnb {
-  /* float: left; */
   margin: 0 auto;
   min-width: 740px;
   width: 820px; }
@@ -168,6 +170,110 @@
     height: 680px; }
 
 #mHeader {
-  display: none; }
+  display: none;
+  background: #fff;
+  color: #222;
+  border-bottom: 1px solid #dbdbdb; }
+
+#mGnb {
+  background: rgba(245, 245, 245, 0.98);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #222;
+  z-index: -1;
+  overflow-y: auto; }
+  #mGnb > ul {
+    padding: 0 64px; }
+    #mGnb > ul > li {
+      font-size: 32px;
+      font-weight: 700;
+      height: 80px;
+      line-height: 80px;
+      margin-bottom: 1px;
+      border-bottom: 2px solid #e5e5e5; }
+      #mGnb > ul > li > ul > li {
+        font-size: 20px;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px; }
+      #mGnb > ul > li:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, #mGnb > ul > li:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after {
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -o-transition: transform 0.5s;
+        transition: transform 0.5s;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 38px;
+        width: 24px;
+        height: 4px;
+        background: #222; }
+      #mGnb > ul > li > a::after {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+      #mGnb > ul > li.on > a::after {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
+      #mGnb > ul > li > a {
+        position: relative;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 0 20px; }
+  #mGnb ul li a {
+    display: block;
+    line-height: 80px; }
+  #mGnb ul li ul {
+    display: none; }
+    #mGnb ul li ul li a {
+      line-height: 60px; }
+  #mGnb .lang {
+    height: 100px;
+    padding: 38px 0;
+    border-bottom: none;
+    margin-top: 80px; }
+    #mGnb .lang a {
+      display: inline-block;
+      color: #949494;
+      font-weight: 400;
+      float: left;
+      font-size: 24px;
+      line-height: 40px;
+      height: 40px; }
+    #mGnb .lang .lang_active {
+      color: #222;
+      margin-right: 32px; }
+    #mGnb .lang .lang_active::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      top: 20px;
+      left: 78px;
+      background: #222; }
+  #mGnb .sns {
+    border-bottom: none;
+    float: right;
+    margin-top: -72px; }
+    #mGnb .sns a {
+      float: left;
+      background: no-repeat center;
+      width: 40px;
+      height: 40px;
+      margin-left: 24px; }
+    #mGnb .sns .sns_insta {
+      background-image: url("../images/common/sns_white_insta.svg"); }
+    #mGnb .sns .sns_facebook {
+      background-image: url("../images/common/sns_white_facebook.svg"); }
+    #mGnb .sns .sns_youtube {
+      background-image: url("../images/common/sns_white_youtube.svg"); }
 
 /*# sourceMappingURL=layout.css.map */

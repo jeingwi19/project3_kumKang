@@ -4,7 +4,7 @@
 
 //pc -> tablet -> mobile
 
-#wrap{width: 1280px;min-width: 320px;margin: 0 auto;}
+#wrap{/* width: 1280px; */min-width: 320px;margin: 0 auto;width: 100%;}
 
 //#header
 .header{//pc, mobile 공통
@@ -51,6 +51,7 @@
     background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
 }
 #pcHeader{
+    /* display: none; */
     .util{
         .lang{
             width: 76px;height: 100px;padding: 38px 0;margin-right: 40px;
@@ -66,7 +67,7 @@
     }
 }
 #pcGnb{
-    /* float: left; */margin: 0 auto;min-width: 740px;width: 820px;
+    margin: 0 auto;min-width: 740px;width: 820px;
     > ul > li{ //depth li
         float: left;
         a{//depth1 a
@@ -94,9 +95,59 @@
     .heigh_full{height: 680px;}
 }
 
-#mHeader{display: none;}
+#mHeader{
+    display: none;
+    background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
+}
+#mGnb{
+    background: rgba(245, 245, 245, 0.98);
+    position: fixed;top: 100px;left: 0;right: 0;bottom: 0;color: #222;z-index: -1;overflow-y: auto;
+    > ul{
+        padding: 0 64px;
+        > li{
+            font-size: 32px;font-weight: 700;height: 80px;line-height: 80px;margin-bottom: 1px;border-bottom: 2px solid #e5e5e5;
+            > ul > li{font-size: 20px;font-weight: 400;height: 40px;line-height: 40px;}
+            &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after{
+                @include transition(transform 0.5s);
+                content: "";position: absolute;top: 50%;right: 38px;width: 24px;height: 4px;background: #222;
+            }
+            > a::after{@include transform(rotate(90deg));}
+            &.on > a::after{@include transform(rotate(0deg));}
+            > a{
+                position: relative;font-size: 32px;font-weight: 700;padding: 0 20px;
+            }
+        }
+    }
+    ul li a{display: block;line-height: 80px;}
+    ul li ul{
+        display: none;
+        li a{line-height: 60px;}
+    }
+
+    .lang{
+        height: 100px;padding: 38px 0;border-bottom: none;margin-top: 80px;
+        a{display: inline-block;color: #949494;font-weight: 400;float: left;font-size: 24px;line-height: 40px;height: 40px;}
+        .lang_active{color: #222;margin-right: 32px;}
+        .lang_active::after{content: "";position: absolute;width: 20px;height: 2px;top: 20px;left: 78px;background: #222;}
+    }
+    .sns{
+        border-bottom: none;float: right;margin-top: -72px;
+        a{float: left;background: no-repeat center;width: 40px;height: 40px;margin-left: 24px;}
+        .sns_insta{background-image: url("../images/common/sns_white_insta.svg");}
+        .sns_facebook{background-image: url("../images/common/sns_white_facebook.svg");}
+        .sns_youtube{background-image: url("../images/common/sns_white_youtube.svg");}
+    }
+}
+
+
+
 
 @media screen and (max-width: 1536px) { //768의 2배수 지원
+    //#header
+    //#footer
+}
+
+@media screen and (max-width: 1440px) { //pc gnb 디자인변환
     //#header
     //#footer
 }
