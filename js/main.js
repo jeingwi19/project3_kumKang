@@ -66,19 +66,17 @@ $(document).ready(function(){
         nextArrow: $('#cnt3 #next')
     }
 
-    $('.img-slider1').slick(sliderBg);
-    $('.img-slider2').slick(sliderFrnt);
+    $('#cnt3 .img-slider1').slick(sliderBg);
+    $('#cnt3 .img-slider2').slick(sliderFrnt);
 
     //#cnt3 일시정지/재생 버튼 제어
     $('#cnt3 .controller .autostop').on('click', function(){
         $(this).hide().siblings().show();
-        sliderBg.sliderFrnt.autoplay.stop();
-        return false;
+        sliderBg.slick('slickPause');
     });
 
     $('#cnt3 .controller .autoplay').on('click', function(){
         $(this).hide().siblings().show();
-        sliderBg.sliderFrnt.autoplay.stop();
-        return false;
+        sliderBg.slick('slickPlay');
     });
 });
