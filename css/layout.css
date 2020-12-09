@@ -143,8 +143,7 @@
       float: left;
       margin-right: 40px; }
       #menuWrap > ul > li > ul > li {
-        height: 40px;
-        background: skyblue; }
+        height: 40px; }
       #menuWrap > ul > li > p {
         padding: 48px 0 8px 0; }
     #menuWrap > ul li a {
@@ -158,7 +157,6 @@
     height: 80px;
     font-size: 20px;
     font-weight: 700;
-    background: greenyellow;
     display: block;
     width: 180px; }
   #menuWrap > ul > li > a {
@@ -168,6 +166,12 @@
     margin-right: -40px; }
   #menuWrap .heigh_full {
     height: 680px; }
+  #menuWrap .fixed_heigh {
+    height: 320px; }
+  #menuWrap .gnb7 {
+    margin-top: -80px; }
+  #menuWrap .gnb8 {
+    margin-top: -40px; }
 
 #mHeader {
   display: none;

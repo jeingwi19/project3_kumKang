@@ -82,17 +82,20 @@
     > ul{
         position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;background: pink;
         > li{float: left;margin-right: 40px;
-            > ul > li{height: 40px;background: skyblue;}
+            > ul > li{height: 40px;}
             > p{padding: 48px 0 8px 0;}
         }
         & li a{display: block;width: 100%;height: 100%;padding: 12px 0;color: #595959;}
     }
     
-    > ul > li > a, >ul > li > p{/* position: relative; */height: 80px;font-size: 20px;font-weight: 700;background: greenyellow;display: block;width: 180px;}
+    > ul > li > a, >ul > li > p{/* position: relative; */height: 80px;font-size: 20px;font-weight: 700;display: block;width: 180px;}
     > ul > li > a{padding: 48px 0 8px 0;color: #222;}
 
     .m-40px{margin-right: -40px;}
     .heigh_full{height: 680px;}
+    .fixed_heigh{height: 320px;}
+    .gnb7{margin-top: -80px;}
+    .gnb8{margin-top: -40px;}
 }
 
 #mHeader{

@@ -41,4 +41,44 @@ $(document).ready(function(){
           },
     })
 
+    //#cnt3 슬라이더
+    var sliderBg = {
+        autoplay: true,
+        autoplaySpeed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1200,
+        cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+        asNavFor: '.img-slider2',
+        prevArrow: $('#cnt3 #prev'),
+        nextArrow: $('#cnt3 #next')
+    }
+
+    var sliderFrnt = {
+        autoplay: true,
+        autoplaySpeed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1200,
+        cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+        asNavFor: '.img-slider1',
+        prevArrow: $('#cnt3 #prev'),
+        nextArrow: $('#cnt3 #next')
+    }
+
+    $('.img-slider1').slick(sliderBg);
+    $('.img-slider2').slick(sliderFrnt);
+
+    //#cnt3 일시정지/재생 버튼 제어
+    $('#cnt3 .controller .autostop').on('click', function(){
+        $(this).hide().siblings().show();
+        sliderBg.sliderFrnt.autoplay.stop();
+        return false;
+    });
+
+    $('#cnt3 .controller .autoplay').on('click', function(){
+        $(this).hide().siblings().show();
+        sliderBg.sliderFrnt.autoplay.stop();
+        return false;
+    });
 });
