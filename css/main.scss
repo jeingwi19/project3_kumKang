@@ -57,7 +57,7 @@
     
     .scroll_ani{
         @include transform(translate(0, 50%));
-        width: 60px;height: 72px;position: absolute;z-index: 999;bottom: 140px;right: 50%;
+        width: 60px;height: 72px;position: absolute;z-index: 100;bottom: 140px;right: 50%;
         .animation{
             @include border-radius(12px);
             width: 24px;height: 36px;border: 2px solid #ccc;margin: 0 18px;

@@ -65,37 +65,43 @@
             }
         }
     }
-}
-#pcGnb{
-    margin: 0 auto;min-width: 740px;width: 820px;
-    > ul > li{ //depth li
-        float: left;
-        a{//depth1 a
-            display: block;font-weight: 500;line-height: 100px;padding: 0 40px 0 40px;
-        }
-    }
-}
-#menuWrap{
-    display: none;
-    position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;
-    
-    > ul{
-        position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;background: pink;
-        > li{float: left;margin-right: 40px;
-            > ul > li{height: 40px;}
-            > p{padding: 48px 0 8px 0;}
-        }
-        & li a{display: block;width: 100%;height: 100%;padding: 12px 0;color: #595959;}
-    }
-    
-    > ul > li > a, >ul > li > p{/* position: relative; */height: 80px;font-size: 20px;font-weight: 700;display: block;width: 180px;}
-    > ul > li > a{padding: 48px 0 8px 0;color: #222;}
 
-    .m-40px{margin-right: -40px;}
-    .heigh_full{height: 680px;}
-    .fixed_heigh{height: 320px;}
-    .gnb7{margin-top: -80px;}
-    .gnb8{margin-top: -40px;}
+    #pcGnb{
+        width: 100%;height: 100%;
+        /* margin: 0 auto;min-width: 740px;width: 820px;background: red; */
+        > ul{
+            width: 820px;height: 100%;margin: 0 auto;
+            > li{
+                float: left;
+                a{
+                    display: block;font-weight: 500;line-height: 100px;padding: 0 40px 0 40px;
+                }
+            }
+        }
+    }
+
+    #menuWrap{
+        display: none;
+        position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;z-index: -1;
+        
+        > ul{
+            position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;background: pink;
+            > li{float: left;margin-right: 40px;
+                > ul > li{height: 40px;}
+                > p{padding: 48px 0 8px 0;}
+            }
+            & li a{display: block;width: 100%;height: 100%;padding: 12px 0;color: #595959;}
+        }
+        
+        > ul > li > a, >ul > li > p{/* position: relative; */height: 80px;font-size: 20px;font-weight: 700;display: block;width: 180px;}
+        > ul > li > a{padding: 48px 0 8px 0;color: #222;}
+    
+        .m-40px{margin-right: -40px;}
+        .heigh_full{height: 680px;}
+        .fixed_heigh{height: 320px;}
+        .gnb7{margin-top: -80px;}
+        .gnb8{margin-top: -40px;}
+    }
 }
 
 #mHeader{
