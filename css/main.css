@@ -259,6 +259,15 @@
     width: 100%;
     height: 100vh;
     background: #E1dcdb; }
+  #cnt3 .bg_box {
+    height: 100vh;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: olive; }
+    #cnt3 .bg_box .img-slider1 {
+      width: 100%; }
   #cnt3 .cnt_tit {
     position: absolute;
     top: 120px;
@@ -276,45 +285,45 @@
       margin-top: 20px;
       color: #fff;
       line-height: 68px; }
-  #cnt3 #bgSlider .controller {
+  #cnt3 .controller {
     position: absolute;
     top: 320px;
     left: 280px;
     width: 156px;
     height: 52px; }
-    #cnt3 #bgSlider .controller button {
+    #cnt3 .controller button {
       width: 52px;
       height: 52px;
       position: absolute;
       background: no-repeat center; }
-    #cnt3 #bgSlider .controller #prev {
+    #cnt3 .controller #prev {
       left: 0;
       background-image: url("../images/common/icon_pc1x_arrow_black_prev.svg"); }
-    #cnt3 #bgSlider .controller #next {
+    #cnt3 .controller #next {
       right: 0;
       background-image: url("../images/common/icon_pc1x_arrow_black_next.svg"); }
-    #cnt3 #bgSlider .controller .play_stop {
+    #cnt3 .controller .play_stop {
       left: 52px; }
-    #cnt3 #bgSlider .controller .autoplay {
+    #cnt3 .controller .autoplay {
       background-image: url("../images/common/icon_pc1x_play_white.svg");
       display: none; }
-    #cnt3 #bgSlider .controller .autostop {
+    #cnt3 .controller .autostop {
       background-image: url("../images/common/icon_pc1x_pause_white.svg"); }
-    #cnt3 #bgSlider .controller .pagination {
+    #cnt3 .controller .pagination {
       width: 720px;
       height: 124px;
       margin-top: 260px; }
-      #cnt3 #bgSlider .controller .pagination ul li {
+      #cnt3 .controller .pagination ul li {
         float: left;
         margin-right: 20px;
         margin-bottom: 40px;
         height: 42px; }
-        #cnt3 #bgSlider .controller .pagination ul li a {
+        #cnt3 .controller .pagination ul li a {
           display: block;
           width: 160px;
           line-height: 42px;
           position: relative; }
-        #cnt3 #bgSlider .controller .pagination ul li a::before {
+        #cnt3 .controller .pagination ul li a::before {
           content: "";
           position: absolute;
           top: 44px;
@@ -322,12 +331,5 @@
           width: 100%;
           height: 2px;
           background: rgba(255, 255, 255, 0.3); }
-  #cnt3 #bgSlider .visual_wrap {
-    height: 100vh;
-    width: 1160px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: olive; }
 
 /*# sourceMappingURL=main.css.map */

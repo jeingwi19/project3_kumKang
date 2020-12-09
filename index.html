@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/common/favicon_android.png"><!-- 72x72 -->
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/common.css"><!-- 태그초기화, 공통클래스 -->
     <link rel="stylesheet" href="css/layout.css">
     <!-- header, footer layout -->
@@ -15,6 +16,7 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/fullpage.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
     <script></script>
@@ -470,6 +472,17 @@
             </section>
             <section class="section" id="cnt3">
                 <div class="bg_begie"></div>
+                <div class="bg_box">
+                    <div class="img-slider1">
+                        <div class="img-slide1" id="backSlide1"></div>
+                        <div class="img-slide1" id="backSlide2"></div>
+                        <div class="img-slide1" id="backSlide3"></div>
+                        <div class="img-slide1" id="backSlide4"></div>
+                        <div class="img-slide1" id="backSlide5"></div>
+                        <div class="img-slide1" id="backSlide6"></div>
+                        <div class="img-slide1" id="backSlide7"></div>
+                    </div>
+                </div>
                 <div class="cnt_tit">
                     <p>MANUFACTURING <span>TECHNIQUE</span></p>
                     <h2 class="blind-b">금강제화 기술력 소개</h2>
@@ -480,88 +493,56 @@
                         <span>신뢰를 제공합니다</span>
                     </strong>
                 </div>
-                <div id="bgSlider">
-                    <div class="visual_wrap">
-                        <ul class="visual" aria-live="polite">
-                            <li class="img_slide idx1">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                <div class="controller">
+                    <button id="prev" type="button">
+                        <span class="blind-b">이전</span>
+                    </button>
+                    <button id="next" type="button">
+                        <span class="blind-b">다음</span>
+                    </button>
+
+                    <!-- 실행, 일시정지 버튼 추가 -->
+                    <button class="autoplay play_stop" title="재생">
+                        <span class="blind-b">재생</span>
+                    </button>
+                    <button class="autostop play_stop" title="일시정지">
+                        <span class="blind-b">일시정지</span>
+                    </button>
+
+                    <div class="pagination">
+                        <ul>
+                            <li>
+                                <a href="" class="index" data-index="1" role="button">굿이어 웰트 제법</a>
                             </li>
-                            <li class="img_slide idx2">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index" data-index="2" role="button">하이드로 제법</a>
                             </li>
-                            <li class="img_slide idx3">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index" data-index="3" role="button">시스 제법</a>
                             </li>
-                            <li class="img_slide idx4">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index margin_line" data-index="4">모카신 제법</a>
                             </li>
-                            <li class="img_slide idx5">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index" data-index="5" role="button">캘리포니아 제법</a>
                             </li>
-                            <li class="img_slide idx6">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index" data-index="6" role="button">볼로냐 제법</a>
                             </li>
-                            <li class="img_slide idx7">
-                                <div class="img_bg"></div>
-                                <div class="img_box"></div>
-                                <a href="" class="btn_view bg_white">자세히 보기</a>
+                            <li>
+                                <a href="" class="index" data-index="7" role="button">프리웨이 제법</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="controller">
-                        <button id="prev" type="button">
-                            <span class="blind-b">이전</span>
-                        </button>
-                        <button id="next" type="button">
-                            <span class="blind-b">다음</span>
-                        </button>
-
-                        <!-- 실행, 일시정지 버튼 추가 -->
-                        <button class="autoplay play_stop" title="재생">
-                            <span class="blind-b">재생</span>
-                        </button>
-                        <button class="autostop play_stop" title="일시정지">
-                            <span class="blind-b">일시정지</span>
-                        </button>
-
-                        <div class="pagination">
-                            <ul>
-                                <li>
-                                    <a href="" class="index" data-index="1" role="button">굿이어 웰트 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index" data-index="2" role="button">하이드로 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index" data-index="3" role="button">시스 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index margin_line" data-index="4">모카신 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index" data-index="5" role="button">캘리포니아 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index" data-index="6" role="button">볼로냐 제법</a>
-                                </li>
-                                <li>
-                                    <a href="" class="index" data-index="7" role="button">프리웨이 제법</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+                <div class="img-slider2">
+                    <div class="img-slide2" id="frontSlide1"></div>
+                    <div class="img-slide2" id="frontSlide2"></div>
+                    <div class="img-slide2" id="frontSlide3"></div>
+                    <div class="img-slide2" id="frontSlide4"></div>
+                    <div class="img-slide2" id="frontSlide5"></div>
+                    <div class="img-slide2" id="frontSlide6"></div>
+                    <div class="img-slide2" id="frontSlide7"></div>
                 </div>
             </section>
             <section class="section" id="cnt4">
