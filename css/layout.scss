@@ -19,29 +19,38 @@
     .util{
         top: 0;right: 0;
         > *{float: left;}
+        .lang{color: #949494;}
+        .lang_active{color: #fff;margin-right: 32px;}
+        .lang_active::before{content: "";position: absolute;width: 2px;height: 12px;top: 45px;left: 38px;background: #595959;}
     }
     .menu{
+        position: relative;
         @include bgsize(cover);
-        width: 100px;height: 100px; 
+        width: 100px;height: 100px;padding: 38px;
     }
     .btn_open{
-        width: 24px;height: 24px;margin: 38px;
+        @include borderbox;
+        position: relative;top: 0;right: 0;
+        width: 100px;height: 100px;
+        .btn_line_inner{
+            @include translate-50;
+            position: absolute;width: 24px;height: 24px;top: 50%;left: 50%;
+        }
         &, .line{position: absolute;}
         .line{
-            @include translate-50;
-            @include transition(all 0.5s);
-            width: 24px;height: 4px;background: #222;top: 50%;
+            @include transition(all 0.5s cubic-bezier(0, 0.82, 0.56, 1.41));
+            width: 24px;height: 4px;background: $red;
         }
-        .top{top: 6px;left: 0;}
-        .btm{top: 18px;left: 0;}
+        .top{top: 4px;left: 0;}
+        .btm{top: 16px;left: 0;}
         &.active{
             .line{background: #222 !important;}
             .top{
-                @include transform(rotate(225deg));
+                @include transform(rotate(-225deg));
                 top: 10px;
             }
             .btm{
-                @include transform(rotate(-225deg));
+                @include transform(rotate(225deg));
                 top: 10px;
             }
         }
@@ -49,15 +58,15 @@
 }
 .header.on{
     background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
+    .lang_active{color: #222;margin-right: 32px;}
+    .lang_active::after{content: "";position: absolute;width: 2px;height: 12px;top: 45px;left: 38px;background: #222;}
 }
 #pcHeader{
     /* display: none; */
     .util{
         .lang{
             width: 76px;height: 100px;padding: 38px 0;margin-right: 40px;
-            a{display: inline-block;color: #949494;font-weight: 700;line-height: 24px;float: left;}
-            .lang_active{color: #222;margin-right: 32px;}
-            .lang_active::after{content: "";position: absolute;width: 2px;height: 12px;top: 45px;right: 38px;background: #222;}
+            a{display: inline-block;font-weight: 700;line-height: 24px;float: left;}
         }
         .menu{
             button{
@@ -81,7 +90,7 @@
     }
 
     #menuWrap{
-        display: none;
+        /* display: none; */
         position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;z-index: -1;
         
         > ul{

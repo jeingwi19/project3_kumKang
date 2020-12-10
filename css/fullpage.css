@@ -196,7 +196,7 @@ html.fp-enabled,
     overflow: hidden;
     display: block;
     opacity: 0;
-    width: 0;
+    /* width: 0; */
     cursor: pointer;
 }
 #fp-nav ul li:hover .fp-tooltip,

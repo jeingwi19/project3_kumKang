@@ -109,6 +109,9 @@ header, nav, section, footer {
   .btn_view.bg_white {
     background: #fff; }
 
+.indicator_black {
+  color: #222; }
+
 body {
   font-family: RozhaOne, NtSansKR, SongMyung;
   font-size: 16px;

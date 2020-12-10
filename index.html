@@ -19,7 +19,50 @@
     <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
+    <script>
+        $(document).ready(function (){
+            var timer = 0;
+            $(window).on('resize', function () {
+                clearTimeout(timer);
+
+                timer = setTimeout(function () {
+                //태블릿(1440가로 크기) 초과일 경우 fullpage 스크립트 호출
+                if ($(this).width() > 1440) createFullpage();
+                else fullpage_api.destroy('all'); //fullpage스크립트, html, css 를 비활성시키기
+                }, 50);
+            });
+
+            $(window).trigger('resize');
+
+            function createFullpage() {
+            $('#fullpage').fullpage({
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['금강 브랜드', '금강제화 역사', '금강 기술제법', '금강 새소식', '금강몰', ''],
+            afterRender: function(){
+                //.fp-tooltip - 스크린리더에서 읽혀지지 못하도록 aria-hidden 속성 추가하기
+                $('#fp-nav .fp-tooltip').attr('aria-hidden', true);
+            },
+            onLeave: function(origin, destination, direction){
+                console.log(origin); //출발
+                console.log(destination); //목적지
+                console.log(direction); // 스크롤 up, down
+                /*
+                origin.index 출발 본문의 인덱스 번호(0부터 카운트 됨)
+                */
+                // 본문2에서 출발해서 본문1로 이동, up 키보드를 누른 경우           
+                if (origin.index === 1 && destination.index === 0 && direction === 'up') {
+                //removeClass()
+                $('#pcHeader').removeClass('on active');
+                } else {
+                $('#pcHeader').addClass('on active');
+                }
+            },
+            
+        });
+      }
+        });
+    </script>
 </head>
 <body>
     <div id="skip">
@@ -28,10 +71,10 @@
 
     <div id="wrap">
         <!-- pc 헤더 -->
-        <header class="header on" id="pcHeader">
+        <header class="header" id="pcHeader">
             <h1 class="logo">
                 <a href="">
-                    <div class="blind-b">금강제화</div>
+                    <span class="blind-b">금강제화</span>
                 </a>
             </h1>
             <div class="util p_a">
@@ -43,10 +86,12 @@
                     </ul>
                 </div>
                 <div class="menu">
-                    <button class="btn_open active" type="button">
+                    <button class="btn_open" type="button">
                         <span class="blind-b">전체메뉴 열기</span>
-                        <span class="line top"></span>
+                        <span class="btn_line_inner">
+                            <span class="line top"></span>
                         <span class="line btm"></span>
+                        </span>
                     </button>
                 </div>
                 <div class="menu_bg"></div><!-- 흰배경 -->
@@ -164,7 +209,7 @@
         <header class="header" id="mHeader">
             <h1 class="logo">
                 <a href="">
-                    <div class="blind-b">금강제화</div>
+                    <span class="blind-b">금강제화</span>
                 </a>
             </h1>
             <div class="util p_a">
@@ -295,6 +340,7 @@
                 </div>
             </div>
         </header>
+
         <div id="fullpage">
             <section class="section" id="cnt1">
                 <h2 class="blind-b">금강제화 브랜드 소개</h2>
@@ -477,15 +523,15 @@
                 <div class="bg_begie"></div>
                 <div class="bg_box">
                     <div class="img-slider1">
-                        <div class="img-slide" id="backSlide1"></div>
-                        <div class="img-slide" id="backSlide2"></div>
-                        <div class="img-slide" id="backSlide3"></div>
-                        <div class="img-slide" id="backSlide4"></div>
-                        <div class="img-slide" id="backSlide5"></div>
-                        <div class="img-slide" id="backSlide6"></div>
-                        <div class="img-slide" id="backSlide7"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
+                        <div data-class="img-slide"></div>
                     </div>
-                    <div class="overlay"></div>
+
                 </div>
                 <div class="img-slider2">
                     <div class="img-slide" id="frontSlide1">
@@ -538,32 +584,6 @@
                     <button class="autostop play_stop" title="일시정지">
                         <span class="blind-b">일시정지</span>
                     </button>
-
-                    <div class="pagination">
-                        <ul>
-                            <li>
-                                <a href="" class="index" data-index="1" role="button">굿이어 웰트 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index" data-index="2" role="button">하이드로 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index" data-index="3" role="button">시스 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index margin_line" data-index="4">모카신 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index" data-index="5" role="button">캘리포니아 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index" data-index="6" role="button">볼로냐 제법</a>
-                            </li>
-                            <li>
-                                <a href="" class="index" data-index="7" role="button">프리웨이 제법</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 
             </section>
