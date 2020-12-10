@@ -103,10 +103,21 @@
             .inner_r{
                 position: absolute;width: 720px;height: 600px;left: 50%;top: 184px;
                 .img_back{
-                    position: absolute;width: 510px;height: 510px;background: orange;right: 0;}
-                .img_front{position: absolute;width: 290px;height: 410px;background: skyblue;bottom: 0;}
+                    position: absolute;width: 510px;height: 510px;right: 0;}
+                .img_front{position: absolute;width: 290px;height: 410px;bottom: 0;}
             }
         }
+
+        .slide4 {
+            .img_back{
+                background-image: url('../images/main/cnt2_pc_img01_2.jpg');
+            }
+            .img_front{
+                background-image: url('../images/main/cnt2_pc_img01_1.jpg');
+            }
+            
+        }
+
         .btn_controller{
             width: 104px;height: 52px;position: absolute;left: 20%;top: 232px;
             .swiper-button-prev, .swiper-button-next{background: no-repeat center;width: 52px;height: 52px;}
@@ -358,35 +369,33 @@
             width: 140px;height: 40px;margin: 0;
             a span{
                 @include border-radius(0px);
-            height: 100%;width: 2px;position: absolute;right: 0;
+                height: 100%;width: 2px;position: absolute;right: 0;
             }
         }
     }
+    ul li{
+        a span, .fp-slidesNav ul li a span{
+            @include translateY-50;
+            left: 100%;top: 50%;background: $red;
+        }
+        a.active span, .fp-slidesNav ul li a.active span{
+            @include border-radius(0px);
+        }
+        .fp-tooltip{
+            top: 8px;font-size: 14px;font-family: NtSansKR;opacity: 0.5;overflow: visible;padding: 0 20px;
+        }
+        &:hover .fp-tooltip::before{content: "";position: absolute;left: 0;top: -11px;width: 100%;height: 40px;background: $red;z-index: -1;}
 
+        &:hover a span, &:hover a.active span, .fp-slidesNav ul li:hover a span .fp-slidesNav ul li:hover a.active span{
+            @include border-radius(0);
+            width: 2px;height: 100%;margin: -2px;
+        }
 
+        a.active span, .fp-slidesNav ul li a.active span, &:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+            @include transform(rotate(135deg));
+            margin: -4px;width: 8px;height: 8px;
+        }
+    }
+  
 }
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
-    @include translateY-50;
-    left: 100%;top: 50%;background: $red;
-}
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{
-    @include border-radius(0px);
-}
-
-#fp-nav ul li .fp-tooltip{
-    top: 8px;font-size: 14px;font-family: NtSansKR;opacity: 0.5;overflow: visible;padding: 0 20px;
-}
-#fp-nav ul li:hover .fp-tooltip::before{content: "";position: absolute;left: 0;top: -11px;width: 100%;height: 40px;background: $red;z-index: -1;}
-
-
-#fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a span .fp-slidesNav ul li:hover a.active span{
-    @include border-radius(0);
-    width: 2px;height: 100%;margin: -2px;
-}
-
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
-    @include transform(rotate(135deg));
-    margin: -4px;width: 8px;height: 8px;
-}
-
-#fp-nav ul li:nth-of-type(4) a.active+fp-tooltip{color: blue;}
+.fp-viewing-3 #fp-nav ul li a.active + .fp-tooltip{color: #222;} //..? 전부다 color 변해야하는데..ㅠㅠ
