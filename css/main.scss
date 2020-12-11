@@ -387,9 +387,15 @@
     }
   
 }
-//cnt3일때 인디케이터 폰트색 변화
+//cnt2일떄
+.fp-viewing-1 #fp-nav ul li a + .fp-tooltip{color: #222;}
+.fp-viewing-1 #fp-nav ul li:hover a + .fp-tooltip{color: #fff;}
+
+//cnt4일때 인디케이터 폰트색 변화
 .fp-viewing-3 #fp-nav ul li a + .fp-tooltip{color: #222;}
 .fp-viewing-3 #fp-nav ul li:hover a + .fp-tooltip{color: #fff;}
+
+
 
 
 @media screen and (max-width: 1536px) { //768의 2배수 지원
@@ -402,7 +408,7 @@
 
 //tablet
 @media screen and (max-width: 1024px) { //768의 가로모드 1024지원
-    
+
 }
 
 @media screen and (max-width: 640px) { //320의 2배수 지원

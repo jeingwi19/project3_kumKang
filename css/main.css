@@ -740,6 +740,12 @@
     width: 8px;
     height: 8px; }
 
+.fp-viewing-1 #fp-nav ul li a + .fp-tooltip {
+  color: #222; }
+
+.fp-viewing-1 #fp-nav ul li:hover a + .fp-tooltip {
+  color: #fff; }
+
 .fp-viewing-3 #fp-nav ul li a + .fp-tooltip {
   color: #222; }
 
