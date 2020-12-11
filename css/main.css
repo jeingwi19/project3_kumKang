@@ -234,6 +234,18 @@
       background-image: url("../images/main/cnt2_pc_img01_2.jpg"); }
     #cnt2 .swiper-container .slide4 .img_front {
       background-image: url("../images/main/cnt2_pc_img01_1.jpg"); }
+    #cnt2 .swiper-container .slide5 .img_back {
+      background-image: url("../images/main/cnt2_pc_img02_2.jpg"); }
+    #cnt2 .swiper-container .slide5 .img_front {
+      background-image: url("../images/main/cnt2_pc_img02_1.jpg"); }
+    #cnt2 .swiper-container .slide6 .img_back {
+      background-image: url("../images/main/cnt2_pc_img03_2.jpg"); }
+    #cnt2 .swiper-container .slide6 .img_front {
+      background-image: url("../images/main/cnt2_pc_img03_1.jpg"); }
+    #cnt2 .swiper-container .slide7 .img_back {
+      background-image: url("../images/main/cnt2_pc_img04_2.jpg"); }
+    #cnt2 .swiper-container .slide7 .img_front {
+      background-image: url("../images/main/cnt2_pc_img04_1.jpg"); }
     #cnt2 .swiper-container .btn_controller {
       width: 104px;
       height: 52px;
@@ -647,73 +659,18 @@
         position: relative;
         left: 50%;
         margin-top: 60px; }
-
-#footer {
-  position: relative; }
-  #footer .ft_bg_dark {
-    width: 100%;
-    height: 400px;
-    background: #333; }
-  #footer .max1280 {
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+  #cnt5 #movie {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     position: absolute;
-    height: 200px;
-    top: 40px;
+    width: 100%;
+    top: 50%;
     left: 50%; }
-    #footer .max1280 a, #footer .max1280 span, #footer .max1280 p {
-      display: inline-block;
-      font-family: NtSansKR;
-      color: #949494; }
-    #footer .max1280 .foot_left .foot_link {
-      font-size: 20px; }
-      #footer .max1280 .foot_left .foot_link ul {
-        width: 100%; }
-        #footer .max1280 .foot_left .foot_link ul li {
-          float: left;
-          margin-right: 80px;
-          line-height: 24px; }
-        #footer .max1280 .foot_left .foot_link ul .bold_white {
-          color: #fff;
-          font-weight: 500; }
-    #footer .max1280 .foot_left .foot_info {
-      position: absolute;
-      width: 100%;
-      height: 104px;
-      top: 90px; }
-      #footer .max1280 .foot_left .foot_info p, #footer .max1280 .foot_left .foot_info span {
-        display: inline-block; }
-      #footer .max1280 .foot_left .foot_info .ft_info, #footer .max1280 .foot_left .foot_info address {
-        margin-bottom: 24px; }
-        #footer .max1280 .foot_left .foot_info .ft_info span, #footer .max1280 .foot_left .foot_info address span {
-          position: relative;
-          margin-left: 40px; }
-        #footer .max1280 .foot_left .foot_info .ft_info span::before, #footer .max1280 .foot_left .foot_info address span::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -20px;
-          width: 1px;
-          height: 16px;
-          background: #949494; }
-    #footer .max1280 .foot_right {
-      position: absolute;
-      width: 160px;
-      height: 40px;
-      right: 0; }
-      #footer .max1280 .foot_right ul li {
-        float: left;
-        width: 40px;
-        height: 40px;
-        background: no-repeat center; }
-        #footer .max1280 .foot_right ul li + li {
-          margin-left: 20px; }
-        #footer .max1280 .foot_right ul li a {
-          width: 100%;
-          height: 100%; }
+    #cnt5 #movie iframe {
+      border: none; }
 
 #fp-nav {
   width: 140px;
@@ -754,7 +711,7 @@
     top: 8px;
     font-size: 14px;
     font-family: NtSansKR;
-    opacity: 0.5;
+    opacity: 0.8;
     overflow: visible;
     padding: 0 20px; }
   #fp-nav ul li:hover .fp-tooltip::before {
@@ -783,7 +740,10 @@
     width: 8px;
     height: 8px; }
 
-.fp-viewing-3 #fp-nav ul li a.active + .fp-tooltip {
+.fp-viewing-3 #fp-nav ul li a + .fp-tooltip {
   color: #222; }
+
+.fp-viewing-3 #fp-nav ul li:hover a + .fp-tooltip {
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

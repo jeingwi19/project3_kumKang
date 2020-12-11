@@ -26,8 +26,8 @@
                 clearTimeout(timer);
 
                 timer = setTimeout(function () {
-                //태블릿(1440가로 크기) 초과일 경우 fullpage 스크립트 호출
-                if ($(this).width() > 1440) createFullpage();
+                //태블릿(768가로 크기) 초과일 경우 fullpage 스크립트 호출
+                if ($(this).width() > 768) createFullpage();
                 else fullpage_api.destroy('all'); //fullpage스크립트, html, css 를 비활성시키기
                 }, 50);
             });
@@ -678,6 +678,9 @@
                 <div class="bg_white"></div>
                 <h2 class="blind-b">금강제화 브랜드 가치</h2>
                 <div class="bg_movie">
+                    <div id="movie">
+                        <iframe id="ytplayer" type="text/html" width="1920" height="1080" src="https://www.youtube.com/embed/Kil17G7CVSg?controls=0&autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3&mute=1&playlist=Kil17G7CVSg" allowfullscreen title="금강제화 헤리티지 Fit Only You"></iframe>
+                    </div>
                     <div class="overlay"></div>
                     <div class="link_mall">
                         <div class="txt_tit">
@@ -693,7 +696,7 @@
                 <!-- .fp-auto-height 브라우저 한칸 높이가 아닌 경우 제어 -->
                 <footer id="footer">
                     <div class="ft_bg_dark"></div>
-                    <div class="max1280">
+                    <div class="max1280 trans_size">
                         <div class="foot_left">
                             <div class="foot_link">
                                 <ul>

@@ -13,7 +13,14 @@ $(document).ready(function(){
       
         autoplay: {
             delay: 2000,
-            disableOninteraction: false,
+        },
+
+        //접근성
+        a11y: {
+            prevSlideMessage: '이전 슬라이드 보기',
+            nextSlideMessage: '다음 슬라이드 보기',
+            firstSlideMessage: '첫번째 슬라이드',
+            lastSlideMessage: '마지막 슬라이드',
         },
       })
 
@@ -38,7 +45,15 @@ $(document).ready(function(){
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
+        },
+        
+        //접근성
+        a11y: {
+            prevSlideMessage: '이전 슬라이드 보기',
+            nextSlideMessage: '다음 슬라이드 보기',
+            firstSlideMessage: '첫번째 슬라이드',
+            lastSlideMessage: '마지막 슬라이드',
+        },
     })
 
     //#cnt3 슬라이더 전체 수정

@@ -71,7 +71,7 @@ header, nav, section, footer{display: block;}
 .p_a{position: absolute;}
 .clearfix::after{content:"";display: block;clear: both;}
 .blind-b{width: 1px;height: 1px;overflow: hidden;border: none;position: absolute;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
-.max1280{max-width: 1280px;width: 100%;margin: 0 auto;}
+.max1280{max-width: 1280px;width: 1280px;margin: 0 auto;}
 .btn_view{
     display: inline-block;text-align: center;font-weight: 500;height: 60px;line-height: 60px;width: 180px;
     &.bg_transline{
