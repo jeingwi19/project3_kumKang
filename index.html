@@ -17,7 +17,7 @@
     <script src="js/fullpage.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/common.js"></script>
+    <script src="js/common2.js"></script>
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function (){
@@ -87,7 +87,7 @@
                 </div>
                 <div class="menu">
                     <button class="btn_open" type="button">
-                        <span class="blind-b">전체메뉴 열기</span>
+                        <span class="scr_text blind-b">전체메뉴 열기</span>
                         <span class="btn_line_inner">
                             <span class="line top"></span>
                         <span class="line btm"></span>
@@ -101,7 +101,7 @@
                     <li class="heigh_full">
                         <p>브랜드</p>
                         <ul>
-                            <li><a href="" class="first">HERITAGE</a></li>
+                            <li><a href="" data-link="first">HERITAGE</a></li>
                             <li><a href="">REGAL</a></li>
                             <li><a href="">LANDROVER</a></li>
                             <li><a href="">CLARKS</a></li>
@@ -186,7 +186,7 @@
                         <a href="">금강상품권</a>
                     </li>
                     <li class="m-40px">
-                        <a href="https://www.kumkangshoe.com/" target="_blank" class="last">
+                        <a href="https://www.kumkangshoe.com/" target="_blank" data-link="last">
                             금강몰 바로가기
                             <span class="blind-b">새창열기</span>
                         </a>
@@ -417,7 +417,7 @@
                             <div class="swiper-inner inner_l">
                                 <div class="swiper-txt">
                                     <div class="dot"></div>
-                                    <div class="count_number">1954</div>
+                                    <div class="count_number"></div>
                                     <div class="history_info">
                                         <ul>
                                             <li>1954.10 금강제화산업사 설립</li>
@@ -679,7 +679,8 @@
                 <h2 class="blind-b">금강제화 브랜드 가치</h2>
                 <div class="bg_movie">
                     <div id="movie">
-                        <iframe id="ytplayer" type="text/html" width="1920" height="1080" src="https://www.youtube.com/embed/Kil17G7CVSg?controls=0&autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3&mute=1&playlist=Kil17G7CVSg" allowfullscreen title="금강제화 헤리티지 Fit Only You"></iframe>
+                        <!-- data-keepplaying : https://megabogo.github.io/plugin/fullpage/lang/korean/ -->
+                        <iframe data-keepplaying id="ytplayer" type="text/html" width="1920" height="1080" src="https://www.youtube.com/embed/Kil17G7CVSg?controls=0&autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3&mute=1&playlist=Kil17G7CVSg" allowfullscreen title="금강제화 헤리티지 Fit Only You"></iframe>
                     </div>
                     <div class="overlay"></div>
                     <div class="link_mall">

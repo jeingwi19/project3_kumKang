@@ -61,15 +61,16 @@
     transform: translate3d(-20%, 0, 0);
 }
 
-@mixin keyframes($animation_name) {
-    @keyframes #{$animation_name} {
-        @content;
-    }
+@mixin keyframes($value...) {
+    -webkit-keyframes: $value;
+    -moz-keyframes: $value;
+    -o-keyframes: $value;
+    keyframes: $value;
 }
 
 
-@mixin animation ($delay, $duration, $name) {
-    animation-delay: $delay;
-    animation-duration: $duration;
-    animation-name: $name
+@mixin animation ($value...) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    animation: $value;
 }

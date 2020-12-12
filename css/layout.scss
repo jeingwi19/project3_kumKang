@@ -38,7 +38,7 @@
         }
         &, .line{position: absolute;}
         .line{
-            @include transition(all 0.5s cubic-bezier(0, 0.82, 0.56, 1.41));
+            @include transition(all 0.5s cubic-bezier(0.61,-0.12, 0.33, 1.11));
             width: 24px;height: 4px;background: $red;
         }
         .top{top: 4px;left: 0;}
@@ -201,10 +201,10 @@
 
 
 
-@media screen and (max-width: 1536px) { //768의 2배수 지원
+/* @media screen and (max-width: 1536px) { //768의 2배수 지원
     //#header
     //#footer
-}
+} */
 
 @media screen and (max-width: 1440px) { //pc gnb 디자인변환
     //#header
@@ -225,7 +225,12 @@
     //#footer
 }
 
-@media screen and (max-width: 640px) { //320의 2배수 지원
+@media screen and (max-width: 768px) { //태블릿 세로
+    //#header
+    //#footer
+}
+
+@media screen and (max-width: 360px) { //모바일
     //#header
     //#footer
 }

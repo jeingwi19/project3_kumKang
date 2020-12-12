@@ -15,13 +15,13 @@ $(document).ready(function(){
     }); */
 
     //#pcGnb > ul > li 또는 전체메뉴버튼 클릭하면 depth1 slideDown
-    $('#pcGnb > ul > li').on('click', function(){
+    /* $('#pcGnb > ul > li').on('click', function(){
         //$(this).parents('.header').addClass('on')
         if($(this).parents('.header').hasClass('on')){
             $('#menuWrap').stop().slideDown('fast');
         }
         return false;
-    });
+    }); */
 
     //pc 전체메뉴 버튼 클릭하면 전체depth2 나타나기
     $('.header .util .menu .btn_open').on('click', function(){
@@ -45,18 +45,18 @@ $(document).ready(function(){
     });
 
     //header에 마우스 진입시 스타일 변경
-    $('#pcGnb').on({
+    /* $('#pcGnb').on({
         mouseenter: function() {
             $(this).parents('.header').addClass('on');
         },
         mouseleave: function() {
             $('.fp-viewing-0 .header').removeClass('on');
         }
-    });
+    }); */
 
     //클릭해서 열린 depth2메뉴에서 마우스가 떠나면 depth2 사라지기
-    $('#menuWrap').on('mouseleave', function() {
+    /* $('#menuWrap').on('mouseleave', function() {
         //$(this).stop().sildeUp('fast');
         $(this).hide();
-    });
+    }); */
 });

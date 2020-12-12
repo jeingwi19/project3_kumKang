@@ -22,7 +22,29 @@ $(document).ready(function(){
             firstSlideMessage: '첫번째 슬라이드',
             lastSlideMessage: '마지막 슬라이드',
         },
-      })
+
+        // 스와이퍼 중단점
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+            slidesPerView: 1,
+            spaceBetween: 40
+            }
+        }
+      });
 
       //#cnt1 일시정지버튼 클릭
       $('#cnt1 .btn_controller .autostop').on('click', function() {
@@ -54,7 +76,41 @@ $(document).ready(function(){
             firstSlideMessage: '첫번째 슬라이드',
             lastSlideMessage: '마지막 슬라이드',
         },
+
+        // 스와이퍼 중단점
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+            slidesPerView: 1,
+            spaceBetween: 40
+            }
+        },
     })
+
+    /* #cnt2 풀페이지 2번째 페이지 body태그에 .fp-viewing-1가 활성화 되었을때 활성화된 스와이퍼 .swiper-slide-active에 숫자 카운트..? */
+    $('.fp-viewing-1').load(function(){
+        if($(this).find('.slide4').hasClass('swiper-slide-active')) $({counter: 1954}).stop().delay(1000).animate({counter:1970},{
+            duration: 1200,
+            easing:'swing',
+            step: function(){
+                $('.swiper-wrapper .slide4.swiper-slide-active').text(Math.ceil(this.counter))
+            },
+            complete: function(){}
+        });
+    });
 
     //#cnt3 슬라이더 전체 수정
     //$('#cnt3 .img-slider1') 내부 슬라이더 상세 내용에는 아이디와 클래스명을 추가하면 안된다(필요한 경우 사용자 지정속성으로)
