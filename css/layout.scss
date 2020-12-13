@@ -90,7 +90,7 @@
     }
 
     #menuWrap{
-        /* display: none; */
+        display: none;
         position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;z-index: -1;
         
         > ul{
@@ -201,10 +201,10 @@
 
 
 
-/* @media screen and (max-width: 1536px) { //768의 2배수 지원
+@media screen and (max-width: 1920px) { //768의 2배수 지원
     //#header
     //#footer
-} */
+}
 
 @media screen and (max-width: 1440px) { //pc gnb 디자인변환
     //#header
@@ -219,8 +219,8 @@
     }
 }
 
-//tablet
-@media screen and (max-width: 1024px) { //768의 가로모드 1024지원
+//노트북
+@media screen and (max-width: 1366px) { //노트북사이즈
     //#header
     //#footer
 }

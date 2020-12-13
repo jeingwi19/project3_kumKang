@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #wrap {
   /* width: 1280px; */
   min-width: 320px;
@@ -151,7 +150,7 @@
           line-height: 100px;
           padding: 0 40px 0 40px; }
   #pcHeader #menuWrap {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 100px;
     left: 0;
@@ -376,10 +375,6 @@
           width: 100%;
           height: 100%; }
 
-/* @media screen and (max-width: 1536px) { //768의 2배수 지원
-    //#header
-    //#footer
-} */
 @media screen and (max-width: 1440px) {
   #pcGnb {
     display: none; }

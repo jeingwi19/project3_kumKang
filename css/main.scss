@@ -60,25 +60,25 @@
         width: 60px;height: 72px;position: absolute;z-index: 100;bottom: 140px;right: 50%;
         .animation{
             @include border-radius(12px);
-            width: 24px;height: 36px;border: 2px solid #ccc;margin: 0 18px;
+            width: 24px;height: 36px;border: 2px solid #ccc;margin: 0 18px;position: relative;
             > span{
                 @include border-radius(50%);
-                @include transform(translate(-50%));
-                /* @include keyframe (move) {
-                    100% {
-                        transform: translateY(100px);
-                    }0%{
-                        transform: translateY(0px);
-                    }
-                }; */
-                position: absolute;left: 50%;top: 24px;width: 4px;height: 4px;background: #ccc;
+                position: absolute;left: 8px;top: 24px;width: 4px;height: 4px;background: #ccc;
             }
         }
         .scroll_txt{height: 72px;width: 60px;bottom: 0;font-family: NtSansKR;font-size: 14px;font-weight: 400;text-align: center;color: #fff;margin-top: 12px;}
 
-        /* .animation > span{
-            
-        } */
+        .animation > span{
+            @include keyframe(drop){
+                100%{
+                    transform: translateY(-2px)
+                }0%{
+                    transform: translateY(-18px)
+                }
+            };
+            @include animation(0s, 2s,drop,infinite);
+            display: inline-block;
+        }
     }
 }
 
@@ -115,8 +115,20 @@
 
         .slide4 {
             .img_back{
-                background-image: url('../images/main/cnt2_pc_img01_2.jpg');
+                overflow: hidden;
             }
+            .img_back::after{
+                @include keyframe(anishow){
+                    100%{
+                        transform: translateX(0)
+                    }0%{
+                        transform: translateX(-100%)
+                    }
+                };
+                @include animation(5s, 0.5s, anishow, 1);
+                content: "";position: absolute;width: 100%;height: 100%;top: 0;left: 0;background-image: url('../images/main/cnt2_pc_img01_2.jpg');
+            }
+
             .img_front{
                 background-image: url('../images/main/cnt2_pc_img01_1.jpg');
             }
@@ -399,17 +411,73 @@
 
 
 
-/* @media screen and (max-width: 1536px) { //768의 2배수 지원
-
-} */
-
-@media screen and (max-width: 1440px) { //pc gnb 디자인변환
+@media screen and (max-width: 1920px) { //768의 2배수 지원
 
 }
 
-//tablet 가로
-@media screen and (max-width: 1024px) { //768의 가로모드 1024지원
+@media screen and (max-width: 1440px) { //pc gnb ////디자인변환
 
+    #cnt2{
+        .cnt_tit{top: 160px;left: 160px;}
+        .swiper-container{
+            .btn_controller{left: 152px;top: 272px;}
+            .swiper-slide{
+                .inner_l{left: 10%;}
+                .inner_r{left: 40%;}
+            }
+        }
+    }
+
+    #cnt3{
+        .cnt_tit{top: 160px;left: 160px;}
+        .controller{left: 152px;top: 352px;}
+        .bg_box{
+            .img-slider1{
+                .slick-dots{left: 160px;}
+            }
+        }
+    }
+    #cnt4{
+        .inner_cnt{top: 55%}
+    }
+}
+
+//노트북
+@media screen and (max-width: 1366px) { //노트북사이즈
+    #cnt1{
+        .swiper-container{
+            .swiper-slide{
+                .swiper-txt{top: 35%;}
+            }
+        }
+    }
+    
+    #cnt2{
+        .cnt_tit{
+            top: 120px;left: 160px;width: 500px;height: 120px;z-index: 2;
+            p{font-size: 28px;}
+            h2{font-size: 40px;margin-top: 16px;}
+        }
+        .swiper-container{
+            .swiper-slide{
+                .bg_line{top: 372px;}
+                .inner_l{
+                    left: 160px;top: 232px;
+                    .dot{top: 130px;}
+                    .history_info{font-size:12px;line-height: 28px;margin-top: 20px;}
+                }
+                & .count_number{font-size: 132px;}
+                .inner_r{left: 40%;}
+                .inner_r{
+                    width: 520px;height: 480px;left: 45%;top: 132px;
+                    .img_back{
+                        width: 400px;height: 400px;right: 0;}
+                    .img_front{width: 210px;height: 320px;bottom: 0;}
+                }
+            }
+            .btn_controller{top: 200px;}
+        }
+    }
 }
 
 @media screen and (max-width: 768px) { //태블릿 세로

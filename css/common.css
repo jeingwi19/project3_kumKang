@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: NtSansKR;
   font-weight: 400;
@@ -140,9 +139,8 @@ body {
     font-weight: 500;
     color: #fff; }
 
-/* 
-@media screen and (max-width: 1536px) { //768의 2배수 지원
-    .max1280{max-width: 100%;}
-} */
+@media screen and (max-width: 1920px) {
+  .max1280 {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=common.css.map */

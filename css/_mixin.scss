@@ -61,16 +61,17 @@
     transform: translate3d(-20%, 0, 0);
 }
 
-@mixin keyframes($value...) {
-    -webkit-keyframes: $value;
-    -moz-keyframes: $value;
-    -o-keyframes: $value;
-    keyframes: $value;
+@mixin animation ($delay, $duration, $animation, $count) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-iteration-count: $count;
+    animation-timing-function: cubic-bezier(.43,.03,.75,.47);
+    animation-fill-mode: forwards;
 }
 
-
-@mixin animation ($value...) {
-    -webkit-animation: $value;
-    -moz-animation: $value;
-    animation: $value;
+@mixin keyframe ($animation_name) {
+    @keyframes #{$animation_name} {
+        @content;
+    }
 }

@@ -53,7 +53,13 @@
                 // 본문2에서 출발해서 본문1로 이동, up 키보드를 누른 경우           
                 if (origin.index === 1 && destination.index === 0 && direction === 'up') {
                 //removeClass()
-                $('#pcHeader').removeClass('on active');
+                    if (!$('#menuWrap').is(':visible')) {
+                        //pc 네비게이션이 열려지지 않은 경우만
+                        $('#pcHeader').removeClass('on active');
+                    } else {
+                        //pc 네비게이션이 열려진 경우는
+                        $('#pcHeader').removeClass('active');
+                    }
                 } else {
                 $('#pcHeader').addClass('on active');
                 }
@@ -96,7 +102,17 @@
                 </div>
                 <div class="menu_bg"></div><!-- 흰배경 -->
             </div>
-            <nav id="menuWrap">
+            <nav id="pcGnb">
+                <ul>
+                    <li><a href="">브랜드</a></li>
+                    <li><a href="">금강제화</a></li>
+                    <li><a href="">금강상품권</a></li>
+                    <li><a href="">스타일</a></li>
+                    <li><a href="">새소식</a></li>
+                    <li><a href="">서비스센터</a></li>
+                </ul>
+            </nav>
+            <nav id="menuWrap" class="test">
                 <ul>
                     <li class="heigh_full">
                         <p>브랜드</p>
@@ -192,17 +208,7 @@
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <nav id="pcGnb">
-                <ul>
-                    <li><a href="">브랜드</a></li>
-                    <li><a href="">금강제화</a></li>
-                    <li><a href="">금강상품권</a></li>
-                    <li><a href="">스타일</a></li>
-                    <li><a href="">새소식</a></li>
-                    <li><a href="">서비스센터</a></li>
-                </ul>
-            </nav>
+            </nav>            
         </header>
 
         <!-- 태블릿/모바일 헤더 -->
@@ -417,7 +423,7 @@
                             <div class="swiper-inner inner_l">
                                 <div class="swiper-txt">
                                     <div class="dot"></div>
-                                    <div class="count_number"></div>
+                                    <div class="count_number">1954</div>
                                     <div class="history_info">
                                         <ul>
                                             <li>1954.10 금강제화산업사 설립</li>
