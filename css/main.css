@@ -212,14 +212,13 @@
         line-height: 32px;
         margin-top: 60px; }
     #cnt2 .swiper-container .swiper-slide .count_number {
-      /* background: pink; */
       height: 152px;
       font-size: 180px; }
     #cnt2 .swiper-container .swiper-slide .inner_r {
       position: absolute;
       width: 720px;
       height: 600px;
-      left: 50%;
+      left: 45%;
       top: 184px; }
       #cnt2 .swiper-container .swiper-slide .inner_r .img_back {
         position: absolute;
@@ -833,6 +832,31 @@
       height: 320px;
       bottom: 0; }
   #cnt2 .swiper-container .btn_controller {
-    top: 200px; } }
+    top: 200px; }
+
+  #cnt3 .bg_box .img-slider1 {
+    width: 70%; }
+    #cnt3 .bg_box .img-slider1 .slick-dots {
+      bottom: 160px; }
+      #cnt3 .bg_box .img-slider1 .slick-dots li button {
+        width: 140px; }
+  #cnt3 .img-slider2 {
+    width: 320px;
+    height: 480px;
+    top: 55%;
+    left: 65%; }
+  #cnt3 .img-slider2-size {
+    width: 320px;
+    height: 480px;
+    left: 825px;
+    top: 308px; }
+  #cnt3 .cnt_tit p {
+    font-size: 28px; }
+  #cnt3 .cnt_tit strong {
+    font-size: 40px;
+    margin-top: 16px;
+    line-height: 52px; }
+  #cnt3 .controller {
+    top: 328px; } }
 
 /*# sourceMappingURL=main.css.map */

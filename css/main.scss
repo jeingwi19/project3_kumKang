@@ -104,9 +104,9 @@
                 
                 .history_info{font-family: NtSansKR;font-weight: 400;line-height: 32px;margin-top: 60px;}
             }
-            & .count_number{/* background: pink; */height: 152px;font-size: 180px;}
+            & .count_number{height: 152px;font-size: 180px;}
             .inner_r{
-                position: absolute;width: 720px;height: 600px;left: 50%;top: 184px;
+                position: absolute;width: 720px;height: 600px;left: 45%;top: 184px;
                 .img_back{
                     position: absolute;width: 510px;height: 510px;right: 0;}
                 .img_front{position: absolute;width: 290px;height: 410px;bottom: 0;}
@@ -477,6 +477,29 @@
             }
             .btn_controller{top: 200px;}
         }
+    }
+
+    #cnt3{
+        .bg_box{
+            .img-slider1{
+                width: 70%;
+                .slick-dots{
+                    bottom: 160px;
+                    li button{width: 140px;}
+                }
+            }
+        }
+        .img-slider2{
+            width: 320px;height: 480px;top: 55%;left: 65%;
+        }
+        .img-slider2-size{
+            width: 320px;height: 480px;left: 825px;top: 308px;
+        }
+        .cnt_tit{
+            p{font-size: 28px;}
+            strong{font-size: 40px;margin-top: 16px;line-height: 52px;}
+        }
+        .controller{top: 328px;}
     }
 }
 
