@@ -26,8 +26,8 @@
                 clearTimeout(timer);
 
                 timer = setTimeout(function () {
-                //태블릿(768가로 크기) 초과일 경우 fullpage 스크립트 호출
-                if ($(this).width() > 768) createFullpage();
+                //태블릿(800가로 크기) 초과일 경우 fullpage 스크립트 호출
+                if ($(this).width() > 800) createFullpage();
                 else fullpage_api.destroy('all'); //fullpage스크립트, html, css 를 비활성시키기
                 }, 50);
             });
@@ -222,10 +222,12 @@
                 <div class="mgnb">
                     <!-- gnb 전체열기 버튼 -->
                     <div class="menu">
-                        <button class="btn_open active" type="button">
-                            <span class="blind-b">전체메뉴 열기</span>
-                            <span class="line top"></span>
+                        <button class="btn_open" type="button">
+                            <span class="scr_text blind-b">모바일 전체메뉴 열기</span>
+                            <span class="btn_line_inner">
+                                <span class="line top"></span>
                             <span class="line btm"></span>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -537,33 +539,35 @@
                         <div data-class="img-slide"></div>
                         <div data-class="img-slide"></div>
                     </div>
-
+                    <div class="cover_bg"></div>
                 </div>
-                <div class="img-slider2">
-                    <div class="img-slide" id="frontSlide1">
-                        <p>굿이어 웰트 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide2">
-                        <p>하이드로 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide3">
-                        <p>시스 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide4">
-                        <p>모카신 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide5">
-                        <p>캘리포니아 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide6">
-                        <p>볼로냐 제법</p>
-                    </div>
-                    <div class="img-slide" id="frontSlide7">
-                        <p>프리웨이 제법</p>
-                    </div>
-                </div>
-                <div class="img-slider2-size">
-                    <a href="" class="btn_view bg_white">자세히 보기</a>
+                <div class="img_sldr2">
+                  <div class="img-slider2">
+                      <div class="img-slide" id="frontSlide1">
+                          <p>굿이어 웰트 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide2">
+                          <p>하이드로 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide3">
+                          <p>시스 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide4">
+                          <p>모카신 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide5">
+                          <p>캘리포니아 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide6">
+                          <p>볼로냐 제법</p>
+                      </div>
+                      <div class="img-slide" id="frontSlide7">
+                          <p>프리웨이 제법</p>
+                      </div>
+                  </div>
+                  <div class="img-slider2-size">
+                      <a href="" class="btn_view bg_white">자세히 보기</a>
+                  </div>
                 </div>
                 <div class="cnt_tit">
                     <p>MANUFACTURING <span>TECHNIQUE</span></p>
@@ -608,7 +612,7 @@
                                         <span class="blind-b">2020년 5월 28일 뉴스기사 새창열기</span>
                                         <span class="date" aria-hidden="true">2020.05.28</span>
                                         <span>금강제화, 30년 장인의 `비스포크 </span>
-                                        <span>서비스`남성을 위한 명품 수제화</span>
+                                        <span class="last_word">서비스`남성을 위한 명품 수제화</span>
                                     </a>
                                     <div class="news_arrow">
                                         <span></span>

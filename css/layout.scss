@@ -94,7 +94,7 @@
         position: absolute;top: 100px;left: 0;right: 0;background: rgba(245, 245, 245, 0.98);border-bottom: 1px solid #dbdbdb;height: 680px;z-index: -1;
         
         > ul{
-            position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;background: pink;
+            position: relative;width: 1060px;left: 0;top: 0;margin: 0 auto;/* background: pink; */
             > li{float: left;margin-right: 40px;
                 > ul > li{height: 40px;}
                 > p{padding: 48px 0 8px 0;}
@@ -219,15 +219,70 @@
     }
 }
 
-//노트북
-@media screen and (max-width: 1366px) { //노트북사이즈
+//laptop
+@media screen and (max-width: 1366px) { //laptop사이즈
     //#header
+    .header{
+        height: 72px;
+        .logo{
+            padding: 15px;
+            a{width: 140px;height: 42px;}
+        }
+        .util .lang_active::before{top: 31px;}
+        .menu{width: 72px;height: 72px;padding: 24px;}
+        .btn_open{
+            width: 72px;height: 72px;
+        }
+    }
+    .header.on .lang_active::after{top: 31px;}
+    #pcHeader{
+        .util .lang{height: 72px;padding: 24px 0;}
+        #menuWrap{
+            top: 72px;
+            > ul{
+                background: red;width: 980px;left: 34px;
+                >li{
+                    margin-right: 40px;
+                    > ul > li{height: 36px;}
+                    > p{padding-top: 36px;padding-bottom: 0;}
+                }
+            }
+            > ul > li > a, > ul > li > p{width: 148px;height: 60px;}
+            .fixed_heigh{height: 292px;}
+        }
+    }
+    
     //#footer
 }
 
-@media screen and (max-width: 768px) { //태블릿 세로
+@media screen and (max-width: 800px) { //태블릿 세로
     //#header
+    /* #menuWrap{display: none;}
+    #mHeader{
+        display: block;
+    } */
+
     //#footer
+    #footer{
+        .trans_size{
+            width: 620px;
+            .foot_left {
+                .foot_link ul li{
+                    margin-right: 28px;
+                    a{font-size: 14px;}
+                }
+                .foot_info{
+                    top: 72px;
+                    .ft_info p{font-size: 14px;}
+                    .ft_info, address{
+                        margin-bottom: 16px;
+                    }
+                    .ft_info + address, address + p{font-size: 14px;}
+                }
+            }
+            .foot_right{left: 0;top: 200px;}
+        }
+    }
 }
 
 @media screen and (max-width: 360px) { //모바일

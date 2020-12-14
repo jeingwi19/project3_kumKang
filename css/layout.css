@@ -165,7 +165,7 @@
       left: 0;
       top: 0;
       margin: 0 auto;
-      background: pink; }
+      /* background: pink; */ }
       #pcHeader #menuWrap > ul > li {
         float: left;
         margin-right: 40px; }
@@ -385,5 +385,69 @@
       margin-right: 40px; }
   #footer .foot_link ul li a {
     font-size: 16px; } }
+@media screen and (max-width: 1366px) {
+  .header {
+    height: 72px; }
+    .header .logo {
+      padding: 15px; }
+      .header .logo a {
+        width: 140px;
+        height: 42px; }
+    .header .util .lang_active::before {
+      top: 31px; }
+    .header .menu {
+      width: 72px;
+      height: 72px;
+      padding: 24px; }
+    .header .btn_open {
+      width: 72px;
+      height: 72px; }
+
+  .header.on .lang_active::after {
+    top: 31px; }
+
+  #pcHeader .util .lang {
+    height: 72px;
+    padding: 24px 0; }
+  #pcHeader #menuWrap {
+    top: 72px; }
+    #pcHeader #menuWrap > ul {
+      background: red;
+      width: 980px;
+      left: 34px; }
+      #pcHeader #menuWrap > ul > li {
+        margin-right: 40px; }
+        #pcHeader #menuWrap > ul > li > ul > li {
+          height: 36px; }
+        #pcHeader #menuWrap > ul > li > p {
+          padding-top: 36px;
+          padding-bottom: 0; }
+    #pcHeader #menuWrap > ul > li > a, #pcHeader #menuWrap > ul > li > p {
+      width: 148px;
+      height: 60px; }
+    #pcHeader #menuWrap .fixed_heigh {
+      height: 292px; } }
+@media screen and (max-width: 800px) {
+  /* #menuWrap{display: none;}
+  #mHeader{
+      display: block;
+  } */
+  #footer .trans_size {
+    width: 620px; }
+    #footer .trans_size .foot_left .foot_link ul li {
+      margin-right: 28px; }
+      #footer .trans_size .foot_left .foot_link ul li a {
+        font-size: 14px; }
+    #footer .trans_size .foot_left .foot_info {
+      top: 72px; }
+      #footer .trans_size .foot_left .foot_info .ft_info p {
+        font-size: 14px; }
+      #footer .trans_size .foot_left .foot_info .ft_info, #footer .trans_size .foot_left .foot_info address {
+        margin-bottom: 16px; }
+      #footer .trans_size .foot_left .foot_info .ft_info + address, #footer .trans_size .foot_left .foot_info address + p {
+        font-size: 14px; }
+    #footer .trans_size .foot_right {
+      left: 0;
+      top: 200px; } }
 
 /*# sourceMappingURL=layout.css.map */

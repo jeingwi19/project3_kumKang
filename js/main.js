@@ -34,12 +34,12 @@ $(document).ready(function(){
             spaceBetween: 20
             },
             // when window width is >= 480px
-            480: {
+            640: {
             slidesPerView: 1,
             spaceBetween: 30
             },
-            // when window width is >= 640px
-            640: {
+            // when window width is >= 678px
+            768: {
             slidesPerView: 1,
             spaceBetween: 40
             }
