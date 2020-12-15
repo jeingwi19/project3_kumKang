@@ -76,7 +76,7 @@
                     transform: translateY(-18px)
                 }
             };
-            @include animation(0s, 2s,drop,infinite);
+            @include animation(0s, 1.8s,drop,infinite);
             display: inline-block;
         }
     }
@@ -446,8 +446,8 @@
     }
 }
 
-//laptop
-@media screen and (max-width: 1280px) { //laptop사이즈
+//태블릿 가로
+@media screen and (max-width: 1280px) { //태블릿가로
     #cnt1{
         .swiper-container{
             .swiper-slide{
@@ -505,7 +505,7 @@
     
                 top: 0;left:0;width: 280px;height: 400px;
                 
-                .img-slide p{padding-top: 300px;}
+                .img-slide p{padding-top: 320px;font-size: 24px;}
               }
               .img-slider2-size{
                   @include translateX-50;
@@ -526,7 +526,7 @@
 
     #cnt4{
         .inner_cnt{
-          width: 880px;height: 600px;left: 600px;top: 60%;
+          width: 880px;height: 600px;left: 600px;top: 55%;
           .tit{
             height: 40px;
             p, h2{line-height: 40px;font-size: 28px;}
@@ -574,12 +574,27 @@
         left: 25%;
       }
     }
+
+    #fp-nav{
+      &.fp-right{right: 40px;}
+    }
+
+    .fp-viewing-2 #fp-nav ul li a + .fp-tooltip{color: #222;}
 }
 
 @media screen and (max-width: 800px) { //태블릿 세로
   #cnt1{
     width: 100%;
-    
+    .scroll_ani .animation > span{
+      @include keyframe(drop){
+        100%{
+            transform: translateY(-18px)
+        }0%{
+            transform: translateY(-2px)
+        }
+    };
+    }
+
   }
   #cnt2{
     .cnt_tit{
@@ -633,17 +648,17 @@
 }
     .img_sldr2{
         @include transform(translate(-50%, -50%));
-        position: absolute;width: 400px;height: 480px;top: 65%;left: 50%;
+        position: absolute;width: 480px;height: 520px;top: 65%;left: 50%;
         .img-slider2{
             @include transform(translate(0, 0));
 
-            top: 0;left:0;width: 400px;height: 400px;
+            top: 0;left:0;width: 480px;height: 480px;
             
             .img-slide p{padding-top: 300px;}
           }
           .img-slider2-size{
               @include translateX-50;
-              position: absolute;height: 400px;top: 0;left: 50%;width: 400px;
+              position: absolute;height: 480px;top: 0;left: 50%;width: 480px;
               a{
                   @include translateX-50;
                   position: absolute;left:50%;bottom: -30px;margin: 0;}
@@ -652,9 +667,9 @@
     }
     
     
-    .controller{left: 88px;top: 292px;}
+    .controller{left: 88px;top: 30%;}
     .cnt_tit{
-      left: 100px;width: 400px;top:100px;
+      left: 100px;width: 400px;top:12%;
       p{font-size: 20px;}
       strong{font-size: 40px;}
     }
@@ -663,7 +678,7 @@
   #cnt4{
     .inner_cnt{
         @include transform(translate(0, -50%));
-        left: 0;top: 55%;width: 100%;height: 740px;
+        left: 0;top: 50%;width: 100%;
         .tit{
             p{margin-left: 40px;}
         }
@@ -709,5 +724,133 @@
 }
 
 @media screen and (max-width: 360px) { //모바일 360
-  
+  #cnt1{
+      width: 100%;
+      .swiper-container .swiper-slide .swiper-txt{
+        left: 10%;top: 28%;
+        h3{font-size: 60px;}
+        h3::before{width: 80%;height: 2px;}
+        span{font-size: 32px;top: -60px;}
+        p{font-size: 20px;}
+        a{margin-top: 180px;}
+      }
+      .swiper-container .btn_controller{left: 5%;top: 50%;}
+      .scroll_ani{left: 80%;top: 76.3%;}
+  }
+  #cnt2{
+    .cnt_tit{
+      left: 10%;top: 14%;width: 200px;
+      h2{font-size: 34px;line-height: 1.2;}
+      p{font-size: 20px;}
+
+    }
+    .swiper-container .swiper-wrapper .swiper-slide{
+      width:100%;
+      .bg_line{top: 320px;width: 100%;}
+      .inner_l{
+        top: 220px;left: 10%;width: 200px;
+        .dot{width: 28px;height: 28px;top: 88px;}
+        .history_info{
+          font-size: 14px;line-height: 28px;margin-top: 20px;
+          & ul li{width: 280px;}
+        }
+      }
+      & .count_number{font-size: 100px;width: 280px;}
+      .inner_r .img_back{height: 320px;}
+    }
+
+    .swiper-container .btn_controller{left: 240px;top: 166px;}
+    
+  }
+  #cnt3{
+    .cnt_tit{
+      left: 10%;width: 300px;top: 14%;
+      p{width: 200px;}
+      strong{font-size: 30px;line-height: 1.2;font-weight: 700;letter-spacing: 0.2px;}
+    }
+    .controller{
+      @include transform(translate(-50%));
+      left: 50%;top: 460px;
+    }
+
+    .bg_box .img-slider1{
+      .slick-dots{
+        width: 140px;bottom: -48px;}
+      .slick-dots li{
+          margin-right: 8px;
+          button{width: 12px; height: 24px;}
+      }
+    }
+    .bg_box .cover_bg{height: 200px;}
+    .img_sldr2{
+      width: 280px;height: 280px;
+      .img-slider2{
+        width: 280px;height: 280px;
+        .img-slide p{font-size: 24px;padding-top: 40px;}
+      }
+      .img-slider2-size{
+        width: 280px;height: 280px;
+        a{height: 48px;line-height: 48px;}
+      }
+    }
+  }
+  /* #cnt4{display: none;} */
+   #cnt4{ 
+    .bg_light_grey{height: 1216px;}
+    .inner_cnt{
+      top: 400px;
+      .tit{
+        p{margin-left: 20px;font-size: 20px;width: 280px;}
+        h2{margin-left: 18px;font-size: 32px;}
+      }
+      .viewmore{top: 32px;right: 10px;color: transparent;height: 40px;width: 40px;padding:0;}
+
+      .inner_news{
+        height: 480px;
+        .news_cnt{
+          height: 382px;margin-top: 80px;
+          ul li{
+            height: 126px;
+             .date{display: block;margin-left: 20px;font-size: 14px;margin-bottom: 2px;}
+             .date + span{margin-left: 20px;}
+             .date + span, .date + span + span{
+               font-size: 16px;margin-top: -20px;
+             }
+          }
+        }
+        .news_cnt ul li a{
+          width: 280px;
+          text-overflow: clip;
+          white-space: normal;
+          overflow: visible;
+          span{height: 48px;}
+          :last-child{margin-left: 20px;}
+        }
+      }
+
+      .inner_event{
+        .event_cnt{
+          margin-top: 80px;height: 220px;
+          ul li > a strong{display: block;}
+          .bnr_txt{
+            margin-top: 12px;margin-left: 24px;
+            p:first-child{font-size: 20px;color: #222;}
+          }
+        }
+
+        .viewmore{top: 592px;}
+      }
+    }
+  }
+  #cnt5{
+    .bg_movie{
+      height: 480px;
+      .link_mall{
+        .txt_tit{
+          width: 260px;font-size: 28px;line-height: 1.4;
+        }
+      }
+    }
+  }
+
 }

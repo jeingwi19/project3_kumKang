@@ -1,6 +1,7 @@
 $(document).ready(function(){
     //depth1 .hide()
     $('#menuWrap').hide();
+    $('#mHeader, #mHeader .mgnb_wrap').hide();
 
     //pc 전체메뉴 버튼 클릭하면 전체depth2 나타나기
     $('#pcHeader .util .menu .btn_open').on('click', function(){
@@ -42,11 +43,6 @@ $(document).ready(function(){
         } */
     });
 
-    //인디케이터 첫번째 클릭, .header에서 .on제거...?? => 이건 뭔가요?? 필요없는것 같은데...
-    // $('#wrap + #fp-nav ul > li > a').on('click', function(){
-    //     $(this).parents('#fp-nav').prev().find('.header').removeClass('on');
-    // });
-
     //pc상단 nav누르면 depth2메뉴 등장 & 스타일 변환..??
     $('#pcGnb ul li a').on('click', function(){
         $('#pcHeader .btn_open').addClass('active').parents('#pcHeader').addClass('on').find('#menuWrap').stop().slideDown('fast', function () {
@@ -55,4 +51,14 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    //태블릿세로, 모바일세로 800px부터 헤더변경
+    $('#wrap .header .util .menu .btn_open').on('click', function(){
+        if($(window).width() < 801) {
+            //.hide()와 display: none차이는 뭔가요?
+            //$('#pcHeader').css('display', 'none').parent().next().show();
+            $('#pcHeader').hide().next().show().find('.mgnb_wrap').stop().slideDown('fast').prev().find('.mgnb .menu .btn_open').addClass('active');
+        }
+    });
+
 });

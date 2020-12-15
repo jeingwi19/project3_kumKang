@@ -201,15 +201,16 @@
       margin-top: -40px; }
 
 #mHeader {
-  display: none;
+  /* display: none; */
   background: #fff;
   color: #222;
   border-bottom: 1px solid #dbdbdb; }
 
 #mGnb {
+  /* display: none; */
   background: rgba(245, 245, 245, 0.98);
   position: fixed;
-  top: 100px;
+  top: 72px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -389,7 +390,8 @@
   .header {
     height: 72px; }
     .header .logo {
-      padding: 15px; }
+      padding: 15px;
+      margin-left: 0px; }
       .header .logo a {
         width: 140px;
         height: 42px; }
@@ -428,10 +430,15 @@
     #pcHeader #menuWrap .fixed_heigh {
       height: 292px; } }
 @media screen and (max-width: 800px) {
-  /* #menuWrap{display: none;}
-  #mHeader{
-      display: block;
-  } */
+  #wrap .header .logo {
+    margin-left: 0; }
+
+  #wrap .header {
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb; }
+    #wrap .header .lang_active {
+      color: #222; }
+
   #footer .trans_size {
     width: 620px; }
     #footer .trans_size .foot_left .foot_link ul li {
@@ -450,7 +457,38 @@
       left: 0;
       top: 200px; } }
 @media screen and (max-width: 360px) {
-  #wrap .header .util .lang ul li a {
-    display: none; } }
+  #wrap .header .util .lang {
+    display: none; }
+
+  #wrap .header .logo {
+    margin-left: 0; }
+
+  #footer .ft_bg_dark {
+    height: 520px; }
+  #footer .trans_size {
+    width: 280px;
+    height: 400px; }
+    #footer .trans_size .foot_left .foot_link ul li {
+      margin-right: 10px;
+      line-height: 16px; }
+    #footer .trans_size .foot_left .foot_info {
+      margin-top: 28px;
+      height: 180px; }
+      #footer .trans_size .foot_left .foot_info .ft_info p span {
+        margin-left: 20px;
+        line-height: 28px; }
+    #footer .trans_size .foot_left .foot_info .ft_info p span::before {
+      left: -10px;
+      top: 9px;
+      width: 2px;
+      height: 12px; }
+    #footer .trans_size .foot_left .foot_info address span::before {
+      display: none; }
+    #footer .trans_size .foot_left .foot_info address p + span {
+      margin-left: 0; }
+    #footer .trans_size .foot_left address p, #footer .trans_size .foot_left .copyright > span {
+      margin-bottom: 12px; }
+    #footer .trans_size .foot_right {
+      top: 320px; } }
 
 /*# sourceMappingURL=layout.css.map */

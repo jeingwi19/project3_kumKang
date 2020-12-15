@@ -114,12 +114,13 @@
 }
 
 #mHeader{
-    display: none;
+    /* display: none; */
     background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
 }
 #mGnb{
+    /* display: none; */
     background: rgba(245, 245, 245, 0.98);
-    position: fixed;top: 100px;left: 0;right: 0;bottom: 0;color: #222;z-index: -1;overflow-y: auto;
+    position: fixed;top: 72px;left: 0;right: 0;bottom: 0;color: #222;z-index: -1;overflow-y: auto;
     > ul{
         padding: 0 64px;
         > li{
@@ -219,13 +220,13 @@
     }
 }
 
-//laptop
-@media screen and (max-width: 1280px) { //laptop사이즈
+//태블릿가로
+@media screen and (max-width: 1280px) { //태블릿가로
     //#header
     .header{
         height: 72px;
         .logo{
-            padding: 15px;
+            padding: 15px;margin-left: 0px;
             a{width: 140px;height: 42px;}
         }
         .util .lang_active::before{top: 31px;}
@@ -257,10 +258,11 @@
 
 @media screen and (max-width: 800px) { //태블릿 세로
     //#header
-    /* #menuWrap{display: none;}
-    #mHeader{
-        display: block;
-    } */
+    #wrap .header .logo{margin-left: 0;}
+    #wrap .header{
+        background: #fff;border-bottom: 1px solid #dbdbdb;
+        .lang_active{color: #222;}
+    }
 
     //#footer
     #footer{
@@ -287,6 +289,28 @@
 
 @media screen and (max-width: 360px) { //모바일
     //#header
-    #wrap .header .util .lang ul li a{display: none;}
+    #wrap .header .util .lang{display: none;}
+    #wrap .header .logo{margin-left: 0;}
+
     //#footer
+    #footer{
+        .ft_bg_dark{height: 520px;}
+        .trans_size{
+            width: 280px;height: 400px;
+            .foot_left{
+                .foot_link ul li{margin-right: 10px;line-height: 16px;}
+                .foot_info{
+                    margin-top: 28px;height: 180px;
+                    .ft_info p span{margin-left: 20px;line-height: 28px;}
+                }
+                .foot_info .ft_info p span::before{left: -10px;top: 9px;width: 2px;height: 12px;}
+                .foot_info address span::before{display: none;}
+                .foot_info address p + span{margin-left: 0;}
+
+                address p, .copyright > span{margin-bottom: 12px;}
+                
+            }
+            .foot_right{top: 320px;}
+        }
+    }
 }
