@@ -447,7 +447,7 @@
 }
 
 //laptop
-@media screen and (max-width: 1366px) { //laptop사이즈
+@media screen and (max-width: 1280px) { //laptop사이즈
     #cnt1{
         .swiper-container{
             .swiper-slide{
@@ -488,18 +488,35 @@
             .img-slider1{
                 width: 70%;
                 .slick-dots{
-                    height: 180px;bottom: 100px;
-                    li button{width: 120px;}
+                    height: 180px;bottom: 100px;width: 600px;
+                    li{
+                        margin-right: 10px;
+                        button{width: 120px;}
+                    } 
                 }
             }
         }
-        .img-slider2{
-            width: 320px;height: 480px;top: 55%;left: 65%;
+        
+        .img_sldr2{
+            @include transform(translate(0, -50%));
+            position: absolute;width: 280px;height: 430px;top: 50%;left: 65%;
+            .img-slider2{
+                @include transform(translate(0, 0));
+    
+                top: 0;left:0;width: 280px;height: 400px;
+                
+                .img-slide p{padding-top: 300px;}
+              }
+              .img-slider2-size{
+                  @include translateX-50;
+                  position: absolute;height: 400px;top: 0;left: 50%;width: 280px;
+                  a{
+                      @include translateX-50;
+                      position: absolute;left:50%;bottom: -30px;margin: 0;}
+              }
+    
         }
-        .img-slider2-size{
-            width: 320px;height: 480px;
-            a{margin: 480px 0 0 0;}
-        }
+
         .cnt_tit{
             p{font-size: 28px;}
             strong{font-size: 40px;margin-top: 16px;line-height: 52px;}

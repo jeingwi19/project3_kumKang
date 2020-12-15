@@ -220,7 +220,7 @@
 }
 
 //laptop
-@media screen and (max-width: 1366px) { //laptop사이즈
+@media screen and (max-width: 1280px) { //laptop사이즈
     //#header
     .header{
         height: 72px;
@@ -287,5 +287,6 @@
 
 @media screen and (max-width: 360px) { //모바일
     //#header
+    #wrap .header .util .lang ul li a{display: none;}
     //#footer
 }

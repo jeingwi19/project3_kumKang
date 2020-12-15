@@ -385,7 +385,7 @@
       margin-right: 40px; }
   #footer .foot_link ul li a {
     font-size: 16px; } }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1280px) {
   .header {
     height: 72px; }
     .header .logo {
@@ -449,5 +449,8 @@
     #footer .trans_size .foot_right {
       left: 0;
       top: 200px; } }
+@media screen and (max-width: 360px) {
+  #wrap .header .util .lang ul li a {
+    display: none; } }
 
 /*# sourceMappingURL=layout.css.map */
