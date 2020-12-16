@@ -546,6 +546,8 @@
         padding: 0 5.5555555556vw;
         height: 13.3333333333vw;
         line-height: 13.3333333333vw; }
+    #mGnb .lang a, #mGnb .sns {
+      display: none; }
 
   #footer .ft_bg_dark {
     height: 116.6666666667vw; }
