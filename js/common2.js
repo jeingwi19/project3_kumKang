@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //depth1 .hide()
     $('#menuWrap').hide();
-    $('#mHeader, #mHeader .mgnb_wrap').hide();
+    //$('#mHeader, #mHeader .mgnb_wrap').hide();
 
     //pc 전체메뉴 버튼 클릭하면 전체depth2 나타나기
     $('#pcHeader .util .menu .btn_open').on('click', function(){
