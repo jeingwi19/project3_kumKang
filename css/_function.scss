@@ -1,9 +1,19 @@
-@function vw-calc($px, $ratio: 1.07, $viewport: 360) {
-    $vwSize: $px * $ratio / ($viewport / 100);
+@function vw-1280calc($px, $viewport: 1280) {
+    $vwSize: $px / ($viewport / 100);
     @return #{$vwSize}vw;
 }
 
-@function vwcalc800($px) {
-    $vwSize: $px / (800 / 100);
+@function vw-800calc($px, $viewport: 800) {
+    $vwSize: $px / ($viewport / 100);
     @return #{$vwSize}vw;
 }
+
+@function vw-360calc($px, $viewport: 360) {
+    $vwSize: $px / ($viewport / 100);
+    @return #{$vwSize}vw;
+}
+
+@function vw-1440calc($px) {
+    $vwSize: $px / (1440 / 100);
+    @return #{$vwSize}vw;
+  }

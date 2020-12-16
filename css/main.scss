@@ -422,9 +422,9 @@
 @media screen and (max-width: 1440px) { //pc gnb ////디자인변환
 
     #cnt2{
-        .cnt_tit{top: 160px;left: 160px;}
+        .cnt_tit{top: vw-1440calc(160);left: vw-1440calc(160);}
         .swiper-container{
-            .btn_controller{left: 152px;top: 272px;}
+            .btn_controller{left: vw-1440calc(152);top: vw-1440calc(272);}
             .swiper-slide{
                 .inner_l{left: 10%;}
                 .inner_r{left: 40%;}
@@ -433,17 +433,21 @@
     }
 
     #cnt3{
-        .cnt_tit{top: 160px;left: 160px;}
-        .controller{left: 152px;top: 352px;}
+        .cnt_tit{top: vw-1440calc(160);left: vw-1440calc(160);}
+        .controller{left: vw-1440calc(152);top: vw-1440calc(352);}
         .bg_box{
             .img-slider1{
-                .slick-dots{left: 160px;}
+                .slick-dots{left: vw-1440calc(160);}
             }
         }
     }
     #cnt4{
         .inner_cnt{top: 55%}
     }
+}
+
+@media screen and (max-width: 1336px) { //laptop사이즈 변경
+
 }
 
 //태블릿 가로
@@ -458,28 +462,28 @@
     
     #cnt2{
         .cnt_tit{
-            top: 120px;left: 160px;width: 500px;height: 120px;z-index: 2;
-            p{font-size: 28px;}
-            h2{font-size: 40px;margin-top: 16px;}
+            top: vw-1280calc(120);left: vw-1280calc(160);width: vw-1280calc(500);height: vw-1280calc(120);z-index: 2;
+            p{font-size: vw-1280calc(28);}
+            h2{font-size: vw-1280calc(40);margin-top: vw-1280calc(16);}
         }
         .swiper-container{
             .swiper-slide{
-                .bg_line{top: 372px;}
+                .bg_line{top: vw-1280calc(372);}
                 .inner_l{
-                    left: 160px;top: 232px;
-                    .dot{top: 130px;}
-                    .history_info{font-size: 14px;width: 300px;line-height: 28px;margin-top: 20px;}
+                    left: vw-1280calc(160);top: vw-1280calc(232);
+                    .dot{top: vw-1280calc(130);}
+                    .history_info{font-size: vw-1280calc(14);width: vw-1280calc(300);line-height: vw-1280calc(28);margin-top: vw-1280calc(20);}
                 }
-                & .count_number{font-size: 128px;}
+                & .count_number{font-size: vw-1280calc(128);}
                 .inner_r{left: 40%;}
                 .inner_r{
-                    width: 520px;height: 480px;left: 45%;top: 132px;
+                    width: vw-1280calc(520);height: vw-1280calc(480);left: 45%;top: vw-1280calc(132);
                     .img_back{
-                        width: 400px;height: 400px;right: 0;}
-                    .img_front{width: 210px;height: 320px;bottom: 0;}
+                        width: vw-1280calc(400);height: vw-1280calc(400);right: 0;}
+                    .img_front{width: vw-1280calc(210);height: vw-1280calc(320);bottom: 0;}
                 }
             }
-            .btn_controller{top: 200px;}
+            .btn_controller{top: vw-1280calc(200);}
         }
     }
 
@@ -488,10 +492,10 @@
             .img-slider1{
                 width: 70%;
                 .slick-dots{
-                    height: 180px;bottom: 100px;width: 600px;
+                    height: vw-1280calc(180);bottom: vw-1280calc(100);width: vw-1280calc(600);
                     li{
-                        margin-right: 10px;
-                        button{width: 120px;}
+                        margin-right: vw-1280calc(10);
+                        button{width: vw-1280calc(120);}
                     } 
                 }
             }
@@ -499,73 +503,73 @@
         
         .img_sldr2{
             @include transform(translate(0, -50%));
-            position: absolute;width: 280px;height: 430px;top: 50%;left: 65%;
+            position: absolute;width: vw-1280calc(280);height: vw-1280calc(430);top: 50%;left: 65%;
             .img-slider2{
                 @include transform(translate(0, 0));
     
-                top: 0;left:0;width: 280px;height: 400px;
+                top: 0;left:0;width: vw-1280calc(280);height: vw-1280calc(400);
                 
-                .img-slide p{padding-top: 320px;font-size: 24px;}
+                .img-slide p{padding-top: vw-1280calc(320);font-size: vw-1280calc(24);}
               }
               .img-slider2-size{
                   @include translateX-50;
-                  position: absolute;height: 400px;top: 0;left: 50%;width: 280px;
+                  position: absolute;height: vw-1280calc(400);top: 0;left: 50%;width: vw-1280calc(280);
                   a{
                       @include translateX-50;
-                      position: absolute;left:50%;bottom: -30px;margin: 0;}
+                      position: absolute;left:50%;bottom: vw-1280calc(-30);margin: 0;}
               }
     
         }
 
         .cnt_tit{
-            p{font-size: 28px;}
-            strong{font-size: 40px;margin-top: 16px;line-height: 52px;}
+            p{font-size: vw-1280calc(28);}
+            strong{font-size: vw-1280calc(40);margin-top: vw-1280calc(16);line-height: vw-1280calc(52);}
         }
-        .controller{top: 300px;left: 146px;}
+        .controller{top: vw-1280calc(300);left: vw-1280calc(146);}
     }
 
     #cnt4{
         .inner_cnt{
-          width: 880px;height: 600px;left: 600px;top: 55%;
+          width: vw-1280calc(880);height: vw-1280calc(600);left: vw-1280calc(600);top: 55%;
           .tit{
-            height: 40px;
-            p, h2{line-height: 40px;font-size: 28px;}
-            h2{margin-left: 20px;}
+            height: vw-1280calc(40);
+            p, h2{line-height: vw-1280calc(40);font-size: vw-1280calc(28);}
+            h2{margin-left: vw-1280calc(20);}
           }
         }
         .inner_news{
-          height: 220px;
+          height: vw-1280calc(220);
           .news_cnt{
-            margin-top: 14px;height: 200px;
+            margin-top: vw-1280calc(14);height: vw-1280calc(200);
             ul{
                 li{
-                    height: 60px;
+                    height: vw-1280calc(60);
                     a{
                         width: 100%;
-                        span{font-size: 20px;line-height: 58px;height: 58px;}
+                        span{font-size: vw-1280calc(20);line-height: vw-1280calc(58);height: vw-1280calc(58);}
                     }
-                    .date{font-size: 16px;}
+                    .date{font-size: vw-1280calc(16);}
                 }
             }
           }
         }
-        .inner_event{margin-top: 60px;
+        .inner_event{margin-top: vw-1280calc(60);
             .event_cnt{
-                height: 180px;margin-top: 14px;
+                height: vw-1280calc(180);margin-top: vw-1280calc(14);
                 ul li{
-                    width: 420px;
+                    width: vw-1280calc(420);
                     > a{
-                        height: 120px;
-                        strong{line-height: 32px;font-size: 24px;padding-top: 26px;padding-left: 26px;font-family: NtSansKR;color: #fff;}
+                        height: vw-1280calc(120);
+                        strong{line-height: vw-1280calc(32);font-size: vw-1280calc(24);padding-top: vw-1280calc(26);padding-left: vw-1280calc(26);font-family: NtSansKR;color: #fff;}
                     }
                 }
                 .bnr_txt{
-                  height: 52px;margin-top: 12px;
-                  :first-child{font-size: 22px;}
-                  :last-child{font-size: 14px;}
+                  height: vw-1280calc(52);margin-top: vw-1280calc(12);
+                  :first-child{font-size: vw-1280calc(22);}
+                  :last-child{font-size: vw-1280calc(14);}
               }
             }
-            .viewmore{top: 292px;}
+            .viewmore{top: vw-1280calc(292);}
         }
     }
 
@@ -576,10 +580,11 @@
     }
 
     #fp-nav{
-      &.fp-right{right: 40px;}
+      &.fp-right{right: vw-1280calc(40);}
     }
 
     .fp-viewing-2 #fp-nav ul li a + .fp-tooltip{color: #222;}
+    .fp-viewing-2 #fp-nav ul li:hover a + .fp-tooltip{color: #fff;}
 }
 
 @media screen and (max-width: 800px) { //태블릿 세로
@@ -588,9 +593,9 @@
     .scroll_ani .animation > span{
       @include keyframe(drop){
         100%{
-            transform: translateY(-18px)
+            transform: translateY(vw-800calc(-18))
         }0%{
-            transform: translateY(-2px)
+            transform: translateY(vw-800calc(-2))
         }
     };
     }
@@ -598,20 +603,22 @@
   }
   #cnt2{
     .cnt_tit{
-        left: 100px;
+        left: vw-800calc(100);
+        p{font-size: vw-800calc(28);}
+        h2{font-size: vw-800calc(40);}
     }
     .swiper-container .swiper-slide{
-      .bg_line{height: 4px;top: 520px;width: 110%;}
+      .bg_line{height: vw-800calc(4);top: vw-800calc(520);width: 110%;}
       .inner_l{
-        top: 300px;left: 100px;
+        top: vw-800calc(300);left: vw-800calc(100);
         .dot{
-          width: 32px;height: 32px;top: 208px;
+          width: vw-800calc(32);height: vw-800calc(32);top: vw-800calc(208);
         }
-        .history_info{line-height: 40px;margin-top: 40px;font-size: 20px;width: 400px;}
+        .history_info{line-height: vw-800calc(40);margin-top: vw-800calc(40);font-size: vw-800calc(20);width: vw-800calc(400);}
       }
-      & .count_number{font-size: 220px;height: 100%;}
+      & .count_number{font-size: vw-800calc(220);height: 100%;}
       .inner_r{
-        z-index: -1;top: 0;left: 0;width: 110%;height: 520px;
+        z-index: -1;top: 0;left: 0;width: 110%;height: vw-800calc(520);
         .img_back{left: 0;width: 100%;height: 100%;}
         .img_front{display: none;}
       }
@@ -622,7 +629,7 @@
     }
 
     .swiper-container .btn_controller{
-        left: 88px;
+        left: vw-800calc(88);
     }
   }
   #cnt3{
@@ -631,58 +638,60 @@
         width: 100%;height: 100%;overflow: visible;
         .slick-dots{
             @include translateX-50;
-          color: transparent;left: 50%;bottom: 0;width: 364px;z-index: 1;
+          color: transparent;left: 50%;bottom: vw-800calc(60);width: vw-800calc(364);z-index: 1;
           li{
-            margin-right: 12px;margin-top: 72px;
-            button{width: 40px;height: 40px;}
-            button::before, button::after{height: 4px;top: 24px;}
+            margin-right: vw-800calc(12);margin-top: vw-800calc(72);
+            button{width: vw-800calc(40);height: vw-800calc(40);}
+            button::before, button::after{height: vw-800calc(4);top: vw-800calc(24);}
             button::before{background: #fff;}
             button::after{background: #222;}
           }
-          ul:last-child{margin-right: -12px;}
+          ul:last-child{margin-right: vw-800calc(-12);}
         }
         /* .slick-dots::before{content: "";position: absolute;bottom: -200px;left: -188px;width: 100%;height: 600px;background: pink;} */
     }
-    .cover_bg{position: absolute;width: 100%;height: 500px;bottom: 0;left: 0;background: #E1DCDB;}
+    .cover_bg{position: absolute;width: 100%;height: vw-800calc(500);bottom: 0;left: 0;background: #E1DCDB;}
     
 }
     .img_sldr2{
         @include transform(translate(-50%, -50%));
-        position: absolute;width: 480px;height: 520px;top: 65%;left: 50%;
+        position: absolute;width: vw-800calc(480);height: vw-800calc(520);top: 65%;left: 50%;
         .img-slider2{
             @include transform(translate(0, 0));
 
-            top: 0;left:0;width: 480px;height: 480px;
+            top: 0;left:0;width: vw-800calc(480);height: vw-800calc(480);
             
-            .img-slide p{padding-top: 300px;}
+            .img-slide p{padding-top: vw-800calc(360);font-size: vw-800calc(40);}
           }
           .img-slider2-size{
               @include translateX-50;
-              position: absolute;height: 480px;top: 0;left: 50%;width: 480px;
+              position: absolute;height: vw-800calc(480);top: 0;left: 50%;width: vw-800calc(480);
               a{
                   @include translateX-50;
-                  position: absolute;left:50%;bottom: -30px;margin: 0;}
+                  position: absolute;left:50%;bottom: vw-800calc(-30);margin: 0;}
           }
 
     }
     
     
-    .controller{left: 88px;top: 30%;}
+    .controller{left: vw-800calc(88);top: vw-800calc(340);}
     .cnt_tit{
-      left: 100px;width: 400px;top:12%;
-      p{font-size: 20px;}
-      strong{font-size: 40px;}
+      left: vw-800calc(100);width: vw-800calc(400);top:12%;
+      p{font-size: vw-800calc(28);}
+      strong{font-size: vw-800calc(40);line-height: 1.2;}
     }
   }
 
   #cnt4{
     .inner_cnt{
         @include transform(translate(0, -50%));
-        left: 0;top: 50%;width: 100%;
-        .tit{
-            p{margin-left: 40px;}
+        left: 0;top: 50%;width: 100%;height: vw-800calc(800);
+        .inner_news .tit, .inner_event .tit{
+            height: vw-800calc(60);
+            p{margin-left: vw-800calc(40);font-size: vw-800calc(28);height: vw-800calc(60);line-height: vw-800calc(60);}
+            h2{font-size: vw-800calc(40);line-height: vw-800calc(60);height: vw-800calc(60);}
         }
-        .viewmore{top: -2px;right: 20px;}
+        .viewmore{top: vw-800calc(-2);right: vw-800calc(20);}
     }
 
     .inner_news{
@@ -691,9 +700,9 @@
         }
     }
     .inner_event{
-      margin-top: 80px;
+      margin-top: vw-800calc(80);
       .event_cnt{
-          height: 120px;
+          height: vw-800calc(120);
           ul li{
               
               float: none;width: 100%;
@@ -702,20 +711,20 @@
               .banner1, .banner2{@include bgsize(cover);}
           }
           .bnr_txt{
-            margin-left: 40px;margin-top: -92px;
+            margin-left: vw-800calc(40);margin-top: vw-800calc(-92);
             &:first-child, &:last-child{color: #fff;}
-            :first-child{font-size: 28px;}
+            :first-child{font-size: vw-800calc(28);}
         }
       }
-      .viewmore{top: 292px;}
+      .viewmore{top: vw-800calc(292);}
     }
   }
 
   #cnt5{
     .bg_movie{
-        height: 800px;
+        height: vw-800calc(800);
     }
-    .bg_movie .link_mall .txt_tit{width: 480px;}
+    .bg_movie .link_mall .txt_tit{width: vw-800calc(480);}
     #movie{
         left: -50%;
     }
@@ -725,129 +734,130 @@
 
 @media screen and (max-width: 360px) { //모바일 360
   #cnt1{
-      width: 100%;
+      width: 100%;min-width: vw-360calc(360);
       .swiper-container .swiper-slide .swiper-txt{
         left: 10%;top: 28%;
-        h3{font-size: 60px;}
-        h3::before{width: 80%;height: 2px;}
-        span{font-size: 32px;top: -60px;}
-        p{font-size: 20px;}
-        a{margin-top: 180px;}
+        h3{font-size: vw-360calc(60);}
+        h3::before{width: 80%;height: vw-360calc(2);}
+        span{font-size: vw-360calc(32);top: vw-360calc(-60);}
+        p{font-size: vw-360calc(20);}
+        a{margin-top: vw-360calc(180);}
       }
       .swiper-container .btn_controller{left: 5%;top: 50%;}
       .scroll_ani{left: 80%;top: 76.3%;}
   }
   #cnt2{
     .cnt_tit{
-      left: 10%;top: 14%;width: 200px;
-      h2{font-size: 34px;line-height: 1.2;}
-      p{font-size: 20px;}
+      left: 10%;top: 14%;width: vw-360calc(200);
+      h2{font-size: vw-360calc(34);line-height: 1.2;}
+      p{font-size: vw-360calc(20);}
 
     }
     .swiper-container .swiper-wrapper .swiper-slide{
       width:100%;
-      .bg_line{top: 320px;width: 100%;}
+      .bg_line{top: vw-360calc(320);width: 100%;}
       .inner_l{
-        top: 220px;left: 10%;width: 200px;
-        .dot{width: 28px;height: 28px;top: 88px;}
+        top: vw-360calc(220);left: 10%;width: vw-360calc(200);
+        .dot{width: vw-360cal(28);height: vw-360calc(28);top: vw-360calc(88);}
         .history_info{
-          font-size: 14px;line-height: 28px;margin-top: 20px;
-          & ul li{width: 280px;}
+          font-size: vw-360calc(14);line-height: vw-360calc(28);margin-top: vw-360calc(20);
+          & ul li{width: vw-360calc(280);}
         }
       }
-      & .count_number{font-size: 100px;width: 280px;}
-      .inner_r .img_back{height: 320px;}
+      & .count_number{font-size: vw-360calc(100);width: vw-360calc(280);}
+      .inner_r .img_back{height: vw-360calc(320);}
     }
 
-    .swiper-container .btn_controller{left: 240px;top: 166px;}
+    .swiper-container .btn_controller{left: vw-360calc(240);top: vw-360calc(166);}
     
   }
   #cnt3{
     .cnt_tit{
-      left: 10%;width: 300px;top: 14%;
-      p{width: 200px;}
-      strong{font-size: 30px;line-height: 1.2;font-weight: 700;letter-spacing: 0.2px;}
+      left: 10%;width: vw-360calc(300);top: 14%;
+      p{width: vw-360calc(200);}
+      strong{font-size: vw-360calc(30);line-height: 1.2;font-weight: 700;letter-spacing: vw-360calc(0.2);}
     }
     .controller{
       @include transform(translate(-50%));
-      left: 50%;top: 460px;
+      left: 50%;top: vw-360calc(460);
     }
 
     .bg_box .img-slider1{
       .slick-dots{
-        width: 140px;bottom: -48px;}
+        width: vw-360calc(212);bottom: vw-360calc(32);}
       .slick-dots li{
-          margin-right: 8px;
-          button{width: 12px; height: 24px;}
+          margin-right: 0;
+          button{width: vw-360calc(20); height: vw-360calc(24);}
+          button::before, button::after{height: vw-360calc(4);}
       }
+      .slick-dots li + li{margin-left: vw-360calc(12);}
     }
-    .bg_box .cover_bg{height: 200px;}
+    .bg_box .cover_bg{height: vw-360calc(200);}
     .img_sldr2{
-      width: 280px;height: 280px;
+      width: vw-360calc(280);height: vw-360calc(280);
       .img-slider2{
-        width: 280px;height: 280px;
-        .img-slide p{font-size: 24px;padding-top: 40px;}
+        width: vw-360calc(280);height: vw-360calc(280);
+        .img-slide p{font-size: vw-360calc(24);padding-top: vw-360calc(40);}
       }
       .img-slider2-size{
-        width: 280px;height: 280px;
-        a{height: 48px;line-height: 48px;}
+        width: vw-360calc(280);height: vw-360calc(280);
+        a{height: vw-360calc(48);line-height: vw-360calc(48);}
       }
     }
   }
-  /* #cnt4{display: none;} */
    #cnt4{ 
-    .bg_light_grey{height: 1216px;}
+    .bg_light_grey{height: vw-360calc(1216);}
     .inner_cnt{
-      top: 400px;
+      top: vw-360calc(400);
       .tit{
-        p{margin-left: 20px;font-size: 20px;width: 280px;}
-        h2{margin-left: 18px;font-size: 32px;}
+        p{margin-left: vw-360calc(20);font-size: vw-360calc(20);width: vw-360calc(280);}
+        h2{margin-left: vw-360calc(18);font-size: vw-360calc(32);}
       }
-      .viewmore{top: 32px;right: 10px;color: transparent;height: 40px;width: 40px;padding:0;}
+      .viewmore{top: vw-360calc(32);right: vw-360calc(10);color: transparent;height: vw-360calc(40);width: vw-360calc(40);padding:0;}
 
       .inner_news{
-        height: 480px;
+        height: vw-360calc(480);
         .news_cnt{
-          height: 382px;margin-top: 80px;
+          height: vw-360calc(382);margin-top: vw-360calc(80);
           ul li{
-            height: 126px;
-             .date{display: block;margin-left: 20px;font-size: 14px;margin-bottom: 2px;}
-             .date + span{margin-left: 20px;}
+            height: vw-360calc(126);
+             .date{display: block;margin-left: vw-360calc(20);font-size: vw-360calc(14);margin-bottom: vw-360calc(2);}
+             .date + span{margin-left: vw-360calc(20);}
              .date + span, .date + span + span{
-               font-size: 16px;margin-top: -20px;
+               font-size: vw-360calc(16);margin-top: vw-360calc(-20);
              }
           }
         }
         .news_cnt ul li a{
-          width: 280px;
+          width: vw-360calc(280);
           text-overflow: clip;
           white-space: normal;
           overflow: visible;
-          span{height: 48px;}
-          :last-child{margin-left: 20px;}
+          span{height: vw-360calc(48);}
+          :last-child{margin-left: vw-360calc(20);}
         }
       }
 
       .inner_event{
         .event_cnt{
-          margin-top: 80px;height: 220px;
+          margin-top: vw-360calc(80);height: vw-360calc(220);
           ul li > a strong{display: block;}
           .bnr_txt{
-            margin-top: 12px;margin-left: 24px;
-            p:first-child{font-size: 20px;color: #222;}
+            margin-top: vw-360calc(12);margin-left: vw-360calc(24);
+            p:first-child{font-size: vw-360calc(20);color: #222;}
           }
         }
 
-        .viewmore{top: 592px;}
+        .viewmore{top: vw-360calc(592);}
       }
     }
   }
   #cnt5{
     .bg_movie{
-      height: 480px;
+      height: vw-360calc(480);
       .link_mall{
         .txt_tit{
-          width: 260px;font-size: 28px;line-height: 1.4;
+          width: vw-360calc(260);font-size: vw-360calc(28);line-height: 1.4;
         }
       }
     }

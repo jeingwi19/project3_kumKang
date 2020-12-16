@@ -381,114 +381,117 @@
     display: none; }
 
   #footer .trans_size {
-    width: 920px; }
+    width: 63.8888888889vw; }
     #footer .trans_size .foot_left .foot_link ul li {
-      margin-right: 40px; }
+      margin-right: 2.7777777778vw; }
   #footer .foot_link ul li a {
-    font-size: 16px; } }
+    font-size: 1.1111111111vw; } }
 @media screen and (max-width: 1280px) {
   .header {
-    height: 72px; }
+    height: 5.625vw; }
     .header .logo {
-      padding: 15px;
-      margin-left: 0px; }
+      padding: 1.171875vw;
+      margin-left: 0; }
       .header .logo a {
-        width: 140px;
-        height: 42px; }
+        width: 10.9375vw;
+        height: 3.28125vw; }
     .header .util .lang_active::before {
-      top: 31px; }
+      top: 2.421875vw; }
     .header .menu {
-      width: 72px;
-      height: 72px;
-      padding: 24px; }
+      width: 5.625vw;
+      height: 5.625vw;
+      padding: 1.875vw; }
     .header .btn_open {
-      width: 72px;
-      height: 72px; }
+      width: 5.625vw;
+      height: 5.625vw; }
 
   .header.on .lang_active::after {
-    top: 31px; }
+    top: 2.421875vw; }
 
   #pcHeader .util .lang {
-    height: 72px;
-    padding: 24px 0; }
+    height: 5.625vw;
+    padding: 1.875vw 0; }
   #pcHeader #menuWrap {
-    top: 72px; }
+    top: 5.625vw; }
     #pcHeader #menuWrap > ul {
-      background: red;
-      width: 980px;
-      left: 34px; }
+      width: 76.5625vw;
+      left: 2.65625vw; }
       #pcHeader #menuWrap > ul > li {
-        margin-right: 40px; }
+        margin-right: 3.125vw; }
         #pcHeader #menuWrap > ul > li > ul > li {
-          height: 36px; }
+          height: 2.8125vw; }
         #pcHeader #menuWrap > ul > li > p {
-          padding-top: 36px;
+          padding-top: 2.8125vw;
           padding-bottom: 0; }
     #pcHeader #menuWrap > ul > li > a, #pcHeader #menuWrap > ul > li > p {
-      width: 148px;
-      height: 60px; }
+      width: 11.5625vw;
+      height: 4.6875vw; }
     #pcHeader #menuWrap .fixed_heigh {
-      height: 292px; } }
+      height: 22.8125vw; } }
 @media screen and (max-width: 800px) {
   #wrap .header .logo {
     margin-left: 0; }
 
+  #wrap .header .util .lang {
+    display: none; }
+
   #wrap .header {
+    height: 9vw;
     background: #fff;
     border-bottom: 1px solid #dbdbdb; }
     #wrap .header .lang_active {
       color: #222; }
 
   #footer .trans_size {
-    width: 620px; }
+    width: 77.5vw; }
     #footer .trans_size .foot_left .foot_link ul li {
-      margin-right: 28px; }
+      margin-right: 3.5vw; }
       #footer .trans_size .foot_left .foot_link ul li a {
-        font-size: 14px; }
+        font-size: 1.75vw; }
     #footer .trans_size .foot_left .foot_info {
-      top: 72px; }
+      top: 9vw; }
       #footer .trans_size .foot_left .foot_info .ft_info p {
-        font-size: 14px; }
+        font-size: 1.75vw; }
       #footer .trans_size .foot_left .foot_info .ft_info, #footer .trans_size .foot_left .foot_info address {
-        margin-bottom: 16px; }
+        margin-bottom: 2vw; }
       #footer .trans_size .foot_left .foot_info .ft_info + address, #footer .trans_size .foot_left .foot_info address + p {
-        font-size: 14px; }
+        font-size: 1.75vw; }
     #footer .trans_size .foot_right {
       left: 0;
-      top: 200px; } }
+      top: 25vw; } }
 @media screen and (max-width: 360px) {
+  #wrap .header {
+    height: 9vw; }
+
   #wrap .header .util .lang {
     display: none; }
 
-  #wrap .header .logo {
-    margin-left: 0; }
-
   #footer .ft_bg_dark {
-    height: 520px; }
+    height: 144.4444444444vw; }
   #footer .trans_size {
-    width: 280px;
-    height: 400px; }
+    width: 77.7777777778vw;
+    height: 111.1111111111vw; }
     #footer .trans_size .foot_left .foot_link ul li {
-      margin-right: 10px;
-      line-height: 16px; }
+      margin-right: 2.7777777778vw;
+      line-height: 4.4444444444vw; }
     #footer .trans_size .foot_left .foot_info {
-      margin-top: 28px;
-      height: 180px; }
+      margin-top: 7.7777777778vw;
+      height: 50vw; }
       #footer .trans_size .foot_left .foot_info .ft_info p span {
-        margin-left: 20px;
-        line-height: 28px; }
+        margin-left: 5.5555555556vw;
+        line-height: 7.7777777778vw; }
     #footer .trans_size .foot_left .foot_info .ft_info p span::before {
-      left: -10px;
-      top: 9px;
-      width: 2px;
-      height: 12px; }
+      left: -2.7777777778vw;
+      top: 2.5vw;
+      width: 0.5555555556vw;
+      height: 3.3333333333vw; }
     #footer .trans_size .foot_left .foot_info address span::before {
       display: none; }
     #footer .trans_size .foot_left .foot_info address p + span {
       margin-left: 0; }
     #footer .trans_size .foot_left address p, #footer .trans_size .foot_left .copyright > span {
-      margin-bottom: 12px; }
+      margin-bottom: 3.3333333333vw; }
     #footer .trans_size .foot_right {
-      top: 320px; } }
+      top: 88.8888888889vw; } }
 
 /*# sourceMappingURL=layout.css.map */
