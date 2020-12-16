@@ -221,45 +221,45 @@
     #pcHeader{display: none;}
     #mHeader{
         display: block;
-        background: #fff;color: #222;border-bottom: 1px solid #dbdbdb;
+        background: #fff;color: #222;border-bottom: vw-800calc(1) solid #dbdbdb;
     }
     #mGnb{
         background: rgba(245, 245, 245, 0.98);
-        position: fixed;top: 72px;left: 0;right: 0;bottom: 100%;color: #222;z-index: -1;overflow-y: auto;
+        position: fixed;top: vw-800calc(72);left: 0;right: 0;bottom: 100%;color: #222;z-index: -1;overflow-y: auto;
         > ul{
-            padding: 0 64px;
+            padding: 0 vw-800calc(64);
             > li{
-                font-size: 32px;font-weight: 700;margin-bottom: 1px;border-bottom: 2px solid #e5e5e5;
-                > ul > li{font-size: 20px;font-weight: 400;height: 40px;line-height: 40px;}
+                font-size: vw-800calc(32);font-weight: 700;margin-bottom: vw-800calc(1);border-bottom: vw-800calc(2) solid #e5e5e5;
+                > ul > li{font-size: vw-800calc(28);font-weight: 400;height: vw-800calc(60);line-height: vw-800calc(60);}
                 &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after{
-                    @include transition(transform 0.5s);
-                    content: "";position: absolute;top: 50%;right: 38px;width: 24px;height: 4px;background: #222;
+                    @include transition(transform 0.2s);
+                    content: "";position: absolute;top: 50%;right: vw-800calc(38);width: vw-800calc(24);height: vw-800calc(4);background: #222;
                 }
-                > a::after{@include transform(rotate(90deg));}
+                > a::after{@include transform(rotate(-90deg));}
                 &.on > a::after{@include transform(rotate(0deg));}
                 > a{
-                    position: relative;font-size: 32px;font-weight: 700;padding: 0 20px;height: 80px;line-height: 80px;
+                    position: relative;font-size: vw-800calc(32);font-weight: 700;padding: 0 vw-800calc(20);height: vw-800calc(80);line-height: vw-800calc(80);
                 }
             }
         }
-        > ul > li > a{display: block;line-height: 80px;}
+        > ul > li > a{display: block;line-height: vw-800calc(80);}
         > ul > li > a + ul > li a{display: none;}
         > ul > li.on > ul{
             >li{
-                line-height: 72px;background: skyblue;
-                a{display: block;padding: 8px 20px;}
+                /* background: pink; */
+                a{display: block;padding: 0 vw-800calc(20);}
             }
         }
 
         .lang{
-            height: 100px;padding: 38px 0;border-bottom: none;margin-top: 80px;
-            a{display: inline-block;color: #949494;font-weight: 400;float: left;font-size: 24px;line-height: 40px;height: 40px;}
-            .lang_active{color: #222;margin-right: 32px;}
-            .lang_active::after{content: "";position: absolute;width: 20px;height: 2px;top: 20px;left: 78px;background: #222;}
+            height: vw-800calc(100);padding: vw-800calc(38) 0;border-bottom: none;margin-top: vw-800calc(80);
+            a{display: inline-block;color: #949494;font-weight: 400;float: left;font-size: vw-800calc(24);line-height: vw-800calc(40);height: vw-800calc(40);}
+            .lang_active{color: #222;margin-right: vw-800calc(32);}
+            .lang_active::after{content: "";position: absolute;width: vw-800calc(20);height: vw-800calc(2);top: vw-800calc(20);left: vw-800calc(78);background: #222;}
         }
         .sns{
-            border-bottom: none;float: right;margin-top: -72px;
-            a{float: left;background: no-repeat center;width: 40px;height: 40px;margin-left: 24px;}
+            border-bottom: none;float: right;margin-top: vw-800calc(-72);
+            a{float: left;background: no-repeat center;width: vw-800calc(40);height: vw-800calc(40);margin-left: vw-800calc(24);}
             .sns_insta{background-image: url("../images/common/sns_white_insta.svg");}
             .sns_facebook{background-image: url("../images/common/sns_white_facebook.svg");}
             .sns_youtube{background-image: url("../images/common/sns_white_youtube.svg");}
@@ -317,11 +317,40 @@
         a{width: vw-360calc(120);height: vw-360calc(36);}
     }
 
+    #mGnb{
+        top: vw-360calc(68);
+
+        > ul{
+            padding: 0 vw-360calc(20);
+            > li{
+                /* font-size: vw-360calc(28); */margin-bottom: vw-360calc(1);border-bottom: vw-360calc(2) solid #e5e5e5;
+                > ul > li{font-size: vw-360calc(20);}
+                &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after{
+                    @include transition(transform 0.2s);
+                    content: "";position: absolute;top: 50%;right: vw-360calc(38);width: vw-360calc(24);height: vw-360calc(4);background: #222;
+                }
+                > a::after{@include transform(rotate(-90deg));}
+                &.on > a::after{@include transform(rotate(0deg));}
+                > a{
+                    position: relative;font-size: vw-360calc(28);font-weight: 700;padding: 0 vw-360calc(20);height: vw-360calc(60);line-height: vw-360calc(60);
+                }
+            }
+        }
+        > ul > li > a{display: block;line-height: vw-360calc(60);}
+        > ul > li > a + ul > li a{display: none;}
+        > ul > li.on > ul{
+            >li{
+                /* background: pink; */
+                height: vw-360calc(48);
+                a{display: block;padding: 0 vw-360calc(20);height: vw-360calc(48);line-height: vw-360calc(48)}
+            }
+        }
+    }
     //#footer
     #footer{
         .ft_bg_dark{height: vw-360calc(420);}
         .trans_size{
-            width: vw-360calc(280);height: vw-360calc(400);
+            width: vw-360calc(280);height: vw-360calc(320);
             .foot_left{
                 .foot_link ul li{margin-right: vw-360calc(10);line-height: vw-360calc(16);padding: vw-360calc(4);}
                 .foot_info{

@@ -608,8 +608,8 @@
   }
   #cnt2{
     .cnt_tit{
-        left: vw-800calc(100);
-        p{font-size: vw-800calc(28);}
+        left: vw-800calc(100);color: #fff;
+        p{font-size: vw-800calc(28);color: #fff;}
         h2{font-size: vw-800calc(40);width: vw-800calc(80);line-height: vw-800calc(52);margin-top: vw-800calc(20);}
     }
     .swiper-container .swiper-slide{
@@ -621,17 +621,19 @@
         }
         .history_info{line-height: vw-800calc(40);margin-top: vw-800calc(40);font-size: vw-800calc(20);width: vw-800calc(400);}
       }
-      & .count_number{font-size: vw-800calc(220);height: 100%;}
+      & .count_number{font-size: vw-800calc(220);height: 100%;color: #fff;}
       .inner_r{
         z-index: -1;top: 0;left: 0;width: 110%;height: vw-800calc(520);
         .img_back{left: 0;width: 100%;height: 100%;}
+        /* .img_back::after{background-image: none;} */
         .img_front{display: none;}
       }
     }
 
-    .slide4{
-      .img_back{background: $red;}
-    }
+    /* .slide4{
+      .inner_r .img_back{background: none;}
+      .inner_r .img_back::after{background-image: ;}
+    } */
 
     .swiper-container .btn_controller{
         left: vw-800calc(88);
@@ -772,7 +774,8 @@
         a{margin-top: vw-360calc(180);}
       }
       .swiper-container .btn_controller{left: 5%;top: 50%;}
-      .scroll_ani{left: 80%;top: 76.3%;}
+      .scroll_ani{left: 80%;top: 75%;}
+      .swiper-container .swiper-slide .swiper-img .swiper-txt a{width: vw-360calc(160);font-size: vw-360calc(14);height: vw-360calc(48);line-height: vw-360calc(48);}
   }
   #cnt2{
     .cnt_tit{
@@ -829,66 +832,78 @@
       }
       .img-slider2-size{
         width: vw-360calc(280);height: vw-360calc(280);
-        a{height: vw-360calc(48);line-height: vw-360calc(48);}
+        a{height: vw-360calc(48);line-height: vw-360calc(48);font-size: vw-360calc(14);width: vw-360calc(160);}
       }
     }
   }
-   #cnt4{ 
-    .bg_light_grey{height: vw-360calc(1216);}
+  #cnt4{
+    height: vw-360calc(1260);
+    .bg_light_grey{height: vw-360calc(1260);}
     .inner_cnt{
-      top: vw-360calc(400);
-      .tit{
-        p{margin-left: vw-360calc(20);font-size: vw-360calc(20);width: vw-360calc(280);}
-        h2{margin-left: vw-360calc(18);font-size: vw-360calc(32);}
-      }
-      .viewmore{top: vw-360calc(32);right: vw-360calc(10);color: transparent;height: vw-360calc(40);width: vw-360calc(40);padding:0;}
-
+      @include transform(translate(0, 0));
+      top: 0;
       .inner_news{
-        height: vw-360calc(480);
-        .news_cnt{
-          height: vw-360calc(382);margin-top: vw-360calc(80);
-          ul li{
-            height: vw-360calc(126);
-             .date{display: block;margin-left: vw-360calc(20);font-size: vw-360calc(14);margin-bottom: vw-360calc(2);}
-             .date + span{margin-left: vw-360calc(20);}
-             .date + span, .date + span + span{
-               font-size: vw-360calc(16);margin-top: vw-360calc(-20);
-             }
+          height: vw-360calc(500);
+          .news_cnt{height: vw-360calc(480);
+        }
+          .news_cnt ul li{
+             height: vw-360calc(110);
+              a{height: 100%;}
+              a > span{padding: auto;}
+              .date{
+                font-size: vw-360calc(14);margin: 0;width: 100%; padding: vw-360calc(20) 0 vw-360calc(8) 0;padding-left: vw-360calc(20);
+              }
+              .date + span{margin-left: vw-360calc(20);}
+              a > span + span{font-size: vw-360calc(16);padding: vw-360calc(4) 0;}
           }
-        }
-        .news_cnt ul li a{
-          width: vw-360calc(280);
-          text-overflow: clip;
-          white-space: normal;
-          overflow: visible;
-          span{height: vw-360calc(48);}
-          :last-child{margin-left: vw-360calc(20);}
-        }
+          .news_cnt ul li a{
+              display: block;white-space: normal;overflow: visible;text-overflow: clip;
+           }
+           .news_cnt ul li:first-child a .date + span + span{margin-left: vw-360calc(20);}
       }
+      .inner_news .tit, .inner_event .tit{
+          height: vw-360calc(40);margin-bottom: vw-360calc(80);margin-top: vw-360calc(60);
+          p{font-size: vw-360calc(24);height: vw-360calc(40);line-height: vw-360calc(40);width: vw-360calc(300);}
+          h2{font-size: vw-360calc(28);line-height: vw-360calc(40);height: vw-360calc(40);margin-left: vw-360calc(20);}
+      }
+      .viewmore{top: vw-360calc(92);right: vw-360calc(20);}
+  }
 
-      .inner_event{
-        .event_cnt{
-          margin-top: vw-360calc(80);height: vw-360calc(220);
-          ul li > a strong{display: block;}
-          .bnr_txt{
-            margin-top: vw-360calc(12);margin-left: vw-360calc(24);
-            p:first-child{font-size: vw-360calc(20);color: #222;}
-          }
+  .inner_event{
+    margin-top: vw-360calc(80);
+    .event_cnt{
+        height: vw-360calc(214);
+        ul > li{margin-left: 0;}
+        ul li{
+            float: none;width: 100%;
+            + li{margin-left: 0;margin-right: 0;margin-top: vw-360calc(40);}
+            > a strong{display: block;font-size: vw-360calc(28);line-height: vw-360calc(32);margin-top: vw-360calc(20);margin-left: vw-360calc(20);}
+            .banner1, .banner2{@include bgsize(cover);height: vw-360calc(120);}
         }
-
-        .viewmore{top: vw-360calc(592);}
+        .bnr_txt{
+          margin-left: vw-360calc(20);margin-top: vw-360calc(12);
+          &:first-child, &:last-child{height: vw-360calc(60);}
+          :first-child{font-size: vw-360calc(20);}
+          :last-child{font-size: vw-360calc(14);}
       }
     }
+    .viewmore{position: absolute;top: vw-360calc(672);}
   }
+}
   #cnt5{
     .bg_movie{
       height: vw-360calc(480);
-      .link_mall{
+      .link_mall{width: auto;
         .txt_tit{
-          width: vw-360calc(260);font-size: vw-360calc(28);line-height: 1.4;
+          min-width: auto;
+          width: vw-360calc(260);
+          p{font-size: vw-360calc(24);
+            line-height: 1.35;
+          }
         }
       }
     }
+    .bg_movie .link_mall .btn_view{width: vw-360calc(160);height: vw-360calc(48);line-height: vw-360calc(48);font-size: vw-360calc(14);}
   }
 
 }
