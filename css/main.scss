@@ -444,6 +444,10 @@
     #cnt4{
         .inner_cnt{top: 55%}
     }
+
+    #fp-nav{
+        &.fp-right{right: vw-1440calc(80);}
+    }
 }
 
 @media screen and (max-width: 1336px) { //laptop사이즈 변경

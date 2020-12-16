@@ -789,7 +789,10 @@
     left: 11.1111111111vw; }
 
   #cnt4 .inner_cnt {
-    top: 55%; } }
+    top: 55%; }
+
+  #fp-nav.fp-right {
+    right: 5.5555555556vw; } }
 @media screen and (max-width: 1280px) {
   #cnt1 .swiper-container .swiper-slide .swiper-txt {
     top: 35%; }
