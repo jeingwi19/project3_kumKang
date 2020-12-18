@@ -1293,8 +1293,8 @@
       left: 10%;
       width: 55.5555555556vw; }
       #cnt2 .swiper-container .swiper-wrapper .swiper-slide .inner_l .dot {
-        width: vw-360cal(28);
-        height: 7.7777777778vw;
+        width: 24px;
+        height: 6.6666666667vw;
         top: 24.4444444444vw; }
       #cnt2 .swiper-container .swiper-wrapper .swiper-slide .inner_l .history_info {
         font-size: 3.8888888889vw;
@@ -1309,7 +1309,7 @@
       height: 88.8888888889vw; }
   #cnt2 .swiper-container .btn_controller {
     left: 66.6666666667vw;
-    top: 46.1111111111vw; }
+    top: 38.8888888889vw; }
 
   #cnt3 .cnt_tit {
     left: 10%;

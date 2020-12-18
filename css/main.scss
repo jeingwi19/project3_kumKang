@@ -789,7 +789,7 @@
       .bg_line{top: vw-360calc(320);width: 100%;}
       .inner_l{
         top: vw-360calc(220);left: 10%;width: vw-360calc(200);
-        .dot{width: vw-360cal(28);height: vw-360calc(28);top: vw-360calc(88);}
+        .dot{width: 24px;height: vw-360calc(24);top: vw-360calc(88);}
         .history_info{
           font-size: vw-360calc(14);line-height: vw-360calc(28);margin-top: vw-360calc(20);
           & ul li{width: vw-360calc(280);}
@@ -799,7 +799,7 @@
       .inner_r .img_back{height: vw-360calc(320);}
     }
 
-    .swiper-container .btn_controller{left: vw-360calc(240);top: vw-360calc(166);}
+    .swiper-container .btn_controller{left: vw-360calc(240);top: vw-360calc(140);}
     
   }
   #cnt3{

@@ -345,7 +345,17 @@
                 a{display: block;padding: 0 vw-360calc(20);height: vw-360calc(48);line-height: vw-360calc(48)}
             }
         }
-        .lang a, .sns{display: none;}
+        
+        .lang{
+            height: vw-360calc(100);padding: vw-360calc(28) 0;margin-top: vw-360calc(48);
+            a{font-size: vw-360calc(20);line-height: vw-360calc(40);height: vw-360calc(40);}
+            .lang_active{margin-right: vw-360calc(20);}
+            .lang_active::after{width: vw-360calc(16);height: vw-360calc(2);top: vw-360calc(20);left: vw-360calc(68);}
+        }
+        .sns{
+            margin-top: vw-360calc(-72);
+            a{width: vw-360calc(40);height: vw-360calc(40);margin-left: vw-360calc(20);}
+        }
     }
     //#footer
     #footer{

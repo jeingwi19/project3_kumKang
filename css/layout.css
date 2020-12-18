@@ -546,8 +546,27 @@
         padding: 0 5.5555555556vw;
         height: 13.3333333333vw;
         line-height: 13.3333333333vw; }
-    #mGnb .lang a, #mGnb .sns {
-      display: none; }
+    #mGnb .lang {
+      height: 27.7777777778vw;
+      padding: 7.7777777778vw 0;
+      margin-top: 13.3333333333vw; }
+      #mGnb .lang a {
+        font-size: 5.5555555556vw;
+        line-height: 11.1111111111vw;
+        height: 11.1111111111vw; }
+      #mGnb .lang .lang_active {
+        margin-right: 5.5555555556vw; }
+      #mGnb .lang .lang_active::after {
+        width: 4.4444444444vw;
+        height: 0.5555555556vw;
+        top: 5.5555555556vw;
+        left: 18.8888888889vw; }
+    #mGnb .sns {
+      margin-top: -20vw; }
+      #mGnb .sns a {
+        width: 11.1111111111vw;
+        height: 11.1111111111vw;
+        margin-left: 5.5555555556vw; }
 
   #footer .ft_bg_dark {
     height: 116.6666666667vw; }
