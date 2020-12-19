@@ -326,10 +326,10 @@
                 /* font-size: vw-360calc(28); */margin-bottom: vw-360calc(1);border-bottom: vw-360calc(2) solid #e5e5e5;
                 > ul > li{font-size: vw-360calc(20);}
                 &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, &:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after{
-                    @include transition(transform 0.2s);
-                    content: "";position: absolute;top: 50%;right: vw-360calc(38);width: vw-360calc(24);height: vw-360calc(4);background: #222;
+                    @include transition(transform 0.5s);
+                    content: "";position: absolute;top: 50%;right: vw-360calc(20);width: vw-360calc(20);height: vw-360calc(4);background: #222;
                 }
-                > a::after{@include transform(rotate(-90deg));}
+                > a::after{@include transform(rotate(-270deg));}
                 &.on > a::after{@include transform(rotate(0deg));}
                 > a{
                     position: relative;font-size: vw-360calc(28);font-weight: 700;padding: 0 vw-360calc(20);height: vw-360calc(60);line-height: vw-360calc(60);
@@ -348,13 +348,13 @@
         
         .lang{
             height: vw-360calc(100);padding: vw-360calc(28) 0;margin-top: vw-360calc(48);
-            a{font-size: vw-360calc(20);line-height: vw-360calc(40);height: vw-360calc(40);}
+            a{font-size: vw-360calc(20);line-height: vw-360calc(40);height: vw-360calc(40);padding: 0 vw-360calc(12);}
             .lang_active{margin-right: vw-360calc(20);}
-            .lang_active::after{width: vw-360calc(16);height: vw-360calc(2);top: vw-360calc(20);left: vw-360calc(68);}
+            .lang_active::after{width: vw-360calc(14);height: vw-360calc(2);top: vw-360calc(20);left: vw-360calc(54);}
         }
         .sns{
             margin-top: vw-360calc(-72);
-            a{width: vw-360calc(40);height: vw-360calc(40);margin-left: vw-360calc(20);}
+            a{width: vw-360calc(40);height: vw-360calc(40);margin-left: vw-360calc(12);}
         }
     }
     //#footer

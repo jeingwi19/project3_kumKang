@@ -503,23 +503,23 @@
         #mGnb > ul > li > ul > li {
           font-size: 5.5555555556vw; }
         #mGnb > ul > li:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::before, #mGnb > ul > li:not(.gnb8):not(.gnb9):not(.lang):not(.sns) > a::after {
-          -webkit-transition: transform 0.2s;
-          -moz-transition: transform 0.2s;
-          -o-transition: transform 0.2s;
-          transition: transform 0.2s;
+          -webkit-transition: transform 0.5s;
+          -moz-transition: transform 0.5s;
+          -o-transition: transform 0.5s;
+          transition: transform 0.5s;
           content: "";
           position: absolute;
           top: 50%;
-          right: 10.5555555556vw;
-          width: 6.6666666667vw;
+          right: 5.5555555556vw;
+          width: 5.5555555556vw;
           height: 1.1111111111vw;
           background: #222; }
         #mGnb > ul > li > a::after {
-          -webkit-transform: rotate(-90deg);
-          -moz-transform: rotate(-90deg);
-          -o-transform: rotate(-90deg);
-          -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg); }
+          -webkit-transform: rotate(-270deg);
+          -moz-transform: rotate(-270deg);
+          -o-transform: rotate(-270deg);
+          -ms-transform: rotate(-270deg);
+          transform: rotate(-270deg); }
         #mGnb > ul > li.on > a::after {
           -webkit-transform: rotate(0deg);
           -moz-transform: rotate(0deg);
@@ -553,20 +553,21 @@
       #mGnb .lang a {
         font-size: 5.5555555556vw;
         line-height: 11.1111111111vw;
-        height: 11.1111111111vw; }
+        height: 11.1111111111vw;
+        padding: 0 3.3333333333vw; }
       #mGnb .lang .lang_active {
         margin-right: 5.5555555556vw; }
       #mGnb .lang .lang_active::after {
-        width: 4.4444444444vw;
+        width: 3.8888888889vw;
         height: 0.5555555556vw;
         top: 5.5555555556vw;
-        left: 18.8888888889vw; }
+        left: 15vw; }
     #mGnb .sns {
       margin-top: -20vw; }
       #mGnb .sns a {
         width: 11.1111111111vw;
         height: 11.1111111111vw;
-        margin-left: 5.5555555556vw; }
+        margin-left: 3.3333333333vw; }
 
   #footer .ft_bg_dark {
     height: 116.6666666667vw; }
