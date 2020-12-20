@@ -33,7 +33,7 @@ https://www.kumkang.com/
   <li>
     Mobile Web
     <ul>
-      <li>360 X 640/li>
+      <li>360 X 640</li>
     </ul>
   </li>
 </ul>
