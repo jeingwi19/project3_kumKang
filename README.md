@@ -1,4 +1,4 @@
-<h1>Project3_Kumkang Responsive Web Publishing Project</h1>
+<h1>Project3_Kumkang Responsive Web Publishing</h1>
 <p>3차프로젝트_금강제화_반응형_웹페이지_제작</p><br>
 
 <h2>Project Period</h2>
