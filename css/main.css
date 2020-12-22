@@ -1417,7 +1417,20 @@
           margin-left: 5.5555555556vw; }
       #cnt4 .inner_cnt .viewmore {
         top: 25.5555555556vw;
-        right: 5.5555555556vw; }
+        right: 5.5555555556vw;
+        color: transparent; }
+        #cnt4 .inner_cnt .viewmore .icon_more {
+          position: absolute;
+          top: 3.3333333333vw;
+          right: 0;
+          width: 7.7777777778vw;
+          height: 7.7777777778vw; }
+          #cnt4 .inner_cnt .viewmore .icon_more::before {
+            top: 3.6111111111vw;
+            left: 1.6666666667vw; }
+          #cnt4 .inner_cnt .viewmore .icon_more::after {
+            top: 1.6666666667vw;
+            left: 3.6111111111vw; }
     #cnt4 .inner_event {
       margin-top: 22.2222222222vw; }
       #cnt4 .inner_event .event_cnt {

@@ -866,7 +866,14 @@
           p{font-size: vw-360calc(24);height: vw-360calc(40);line-height: vw-360calc(40);width: vw-360calc(300);}
           h2{font-size: vw-360calc(28);line-height: vw-360calc(40);height: vw-360calc(40);margin-left: vw-360calc(20);}
       }
-      .viewmore{top: vw-360calc(92);right: vw-360calc(20);}
+      .viewmore{
+          top: vw-360calc(92);right: vw-360calc(20);color: transparent;
+          .icon_more{
+              position:absolute;top: vw-360calc(12);right: 0;width: vw-360calc(28);height: vw-360calc(28);
+              &::before{top: vw-360calc(13);left: vw-360calc(6);}
+              &::after{top: vw-360calc(6);left: vw-360calc(13);}
+            }
+        }
   }
 
   .inner_event{
